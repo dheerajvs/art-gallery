@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: dheerajvs/art-gallery
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "categories"
+    label: "Categories"
+    label_singular: "Category"
+    description: >
+      List of art categories.
+    folder: "src/pages/categories"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+
+  - name: "items"
+    label: "Items"
+    label_singular: "Item"
+    folder: "src/pages/items"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "item"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Medium", name: "medium", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Width (inches)", name: "width", widget: "number"}
+      - {label: "Height (inches)", name: "height", widget: "number"}
+      - {label: "Sold out", name: "sold", widget: "boolean", default: false}
+      - {label: "Available as commissioned work", name: "available", widget: "boolean", default: true}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Large Image", name: "large_image", widget: "image"}
+      - {label: "Categories", name: "categories", widget: "list", fields: [{label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title"}]}

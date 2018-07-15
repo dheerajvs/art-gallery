@@ -21,6 +21,8 @@ collections:
   - name: "items"
     label: "Items"
     label_singular: "Item"
+    description: >
+      List of art items.
     folder: "src/pages/items"
     create: true
     slug: "{{slug}}"

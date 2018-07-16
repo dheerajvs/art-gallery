@@ -39,3 +39,15 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Large Image", name: "large_image", widget: "image"}
       - {label: "Categories", name: "categories", widget: "list", fields: [{label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title"}]}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "src/pages/about.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - {label: "Testimonials", name: "testimonials", widget: "list", fields: [{label: "Author", name: "title", widget: "string"}, {label: "Quote", name: "quote", widget: "text"}, {label: "Profession & Place", name: "place", widget: "string"}]}
+          - {label: "Avatar", name: "avatar", widget: "image"}
+          - {label: "About", name: "body", widget: "markdown"}

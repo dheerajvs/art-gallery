@@ -3,7 +3,7 @@ templateKey: item
 title: The Maharashtrian Lady
 medium: Oil on canvas
 description: >-
-  Recopy of Raja Ravi Varma's painting, a traditionally dressed Maharashtrian
+  Recopy of Raja Ravi Varma’s painting, a traditionally dressed Maharashtrian
   lady.
 width: '20'
 height: '28'

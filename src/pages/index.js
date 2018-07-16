@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+
 import Button from '@material/react-button'
+import Card, {
+  CardPrimaryContent,
+  CardMedia,
+} from '@material/react-card'
 
 import Layout from '../components/layout'
 
@@ -21,19 +26,24 @@ const IndexPage = ({ data }) => {
       {categories.map(({ node: categoryNode }) => (
         <section key={categoryNode.fields.slug}>
           <header>
-            <Button>{categoryNode.frontmatter.title} ▸</Button>
+            <Button>{categoryNode.frontmatter.title}</Button>
           </header>
-          <ul>
+          <div>
             {items.filter(({ node: itemNode }) => (
               itemNode.frontmatter.categories.find(({ category }) =>
                 category === categoryNode.frontmatter.title
               )
             )).map(({ node: itemNode }) => (
-              <li>
-                <Link to={itemNode.fields.slug}>{itemNode.frontmatter.title}</Link>
-              </li>
+              <Link to={itemNode.fields.slug} key={itemNode.fields.slug}>
+                <Card>
+                  <CardPrimaryContent>
+                    <CardMedia imageUrl={itemNode.frontmatter.image} square />
+                    <h2>{itemNode.frontmatter.title}</h2>
+                  </CardPrimaryContent>
+                </Card>
+              </Link>
             ))}
-          </ul>
+          </div>
         </section>
       ))}
     </Layout>
@@ -61,6 +71,7 @@ export const pageQuery = graphql`
           frontmatter {
             templateKey
             title
+            image
             categories {
               category
             }

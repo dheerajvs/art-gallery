@@ -9,13 +9,9 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <Link to="/">Gallery</Link>
-      <Link to="/about/">About</Link>
-      <Link to="/contact/">Contact</Link>
       {items.map(({ node: item }) => (
-        <div>
-          <div>{item.frontmatter.title}</div>
-          <div>{item.fields.slug}</div>
+        <div key={item.fields.slug}>
+          <Link to={item.fields.slug}>{item.frontmatter.title}</Link>
         </div>
       ))}
     </Layout>
@@ -43,7 +39,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            templateKey
             title
           }
         }

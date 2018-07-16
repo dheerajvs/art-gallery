@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
@@ -27,6 +27,11 @@ const Layout = ({ children, data }) => (
           ]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />
+        <nav>
+          <Link to="/">Gallery</Link>
+          <Link to="/about/">About</Link>
+          <Link to="/contact/">Contact</Link>
+        </nav>
         <div
           style={{
             margin: '0 auto',

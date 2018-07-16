@@ -735,11 +735,29 @@
     prop-types "^15.6.1"
     react "^16.3.2"
 
+"@material/react-material-icon@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@material/react-material-icon/-/react-material-icon-0.3.0.tgz#a889b0479ec4158ba4f80a463340205196f7a78d"
+  dependencies:
+    "@material/react-ripple" "^0.3.0"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.3.2"
+
 "@material/react-ripple@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@material/react-ripple/-/react-ripple-0.3.0.tgz#f92d159a7388a31322c2b7ac374625831418c195"
   dependencies:
     "@material/ripple" "^0.36.0"
+    classnames "^2.2.5"
+    prop-types "^15.6.1"
+    react "^16.3.2"
+
+"@material/react-top-app-bar@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@material/react-top-app-bar/-/react-top-app-bar-0.3.0.tgz#fe06220dd175758cfa4aa2f01bc5212f3ab3009b"
+  dependencies:
+    "@material/top-app-bar" "^0.36.0"
     classnames "^2.2.5"
     prop-types "^15.6.1"
     react "^16.3.2"
@@ -759,6 +777,18 @@
 "@material/theme@^0.35.0":
   version "0.35.0"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-0.35.0.tgz#a2c76f60b82a53d399b769ef91ec52e83ad3c3bd"
+
+"@material/top-app-bar@^0.36.0":
+  version "0.36.1"
+  resolved "https://registry.yarnpkg.com/@material/top-app-bar/-/top-app-bar-0.36.1.tgz#2b80bac73b6eb426efee9ba3f676084fefcd19fb"
+  dependencies:
+    "@material/animation" "^0.34.0"
+    "@material/base" "^0.35.0"
+    "@material/elevation" "^0.36.1"
+    "@material/ripple" "^0.36.0"
+    "@material/rtl" "^0.36.0"
+    "@material/theme" "^0.35.0"
+    "@material/typography" "^0.35.0"
 
 "@material/typography@^0.35.0":
   version "0.35.0"

@@ -5,6 +5,8 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material/react-button": "^0.3.0",
+    "@material/react-material-icon": "^0.3.0",
+    "@material/react-top-app-bar": "^0.3.0",
     "gatsby": "2.0.0-beta.36",
     "gatsby-plugin-netlify": "next",
     "gatsby-plugin-netlify-cms": "next",

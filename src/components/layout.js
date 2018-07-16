@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
+import Button from '@material/react-button'
+
 import Header from './header'
 import './layout.css'
 
@@ -28,7 +30,7 @@ const Layout = ({ children, data }) => (
         />
         <Header siteTitle={data.site.siteMetadata.title} />
         <nav>
-          <Link to="/">Gallery</Link>
+          <Button>Gallery</Button>
           <Link to="/about/">About</Link>
           <Link to="/contact/">Contact</Link>
         </nav>

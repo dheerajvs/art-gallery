@@ -1,49 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components';
 
 import Card, {
   CardPrimaryContent,
   CardMedia,
 } from '@material/react-card'
 
-export const Carousel = ({ children }) => (
-  <div
-    style={{
-      display: 'flex',
-      minWidth: '100%',
-      overflowX: 'auto'
-    }}
-  >
-    {children}
-  </div>
-)
+const StyledCard = styled(Card)`
+  margin-right: 10px;
+  margin-bottom: 4px;
+`
+
+const StyledCardPrimaryContent = styled(CardPrimaryContent)`
+  width: 150px;
+`
+
+const CardTitle = styled.h2`
+  font-size: 0.875em;
+  font-weight: normal;
+  padding: 0 8px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`
+
+export const Carousel = styled.div`
+  display: flex;
+  min-width: 100%;
+  overflow-x: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`
 
 Carousel.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
 export const CarouselItem = ({ imageUrl, title, onClick }) => (
-  <Card
-    style={{
-      margin: '5px',
-    }}
-    onClick={onClick}
-  >
-    <CardPrimaryContent style={{ width: '140px' }}>
+  <StyledCard onClick={onClick}>
+    <StyledCardPrimaryContent>
       <CardMedia imageUrl={imageUrl} square/>
-      <h2
-        style={{
-          fontSize: '0.875em',
-          fontWeight: 'normal',
-          padding: '0 8px',
-          overflow: 'hidden',
-          textAlign: 'center',
-          textOverflow: 'ellipsis',
-          whiteSpace: 'nowrap',
-        }}
-      >{title}</h2>
-    </CardPrimaryContent>
-  </Card>
+      <CardTitle>{title}</CardTitle>
+    </StyledCardPrimaryContent>
+  </StyledCard>
 )
 
 CarouselItem.propTypes = {

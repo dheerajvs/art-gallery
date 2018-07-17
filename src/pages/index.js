@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql, push } from 'gatsby'
 import PropTypes from 'prop-types'
-import Button from '@material/react-button'
 
 import { Carousel, CarouselItem } from '../components/carousel'
+import { CategoryButton } from '../components/button'
 import Layout from '../components/layout'
 import './index.css'
 
@@ -21,9 +21,9 @@ const IndexPage = ({ data }) => {
       {categories.map(({ node: categoryNode }) => (
         <section key={categoryNode.fields.slug}>
           <header>
-            <Button onClick={() => push(categoryNode.fields.slug)}>
+            <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
               {categoryNode.frontmatter.title}
-            </Button>
+            </CategoryButton>
           </header>
           <Carousel>
             {items.filter(({ node: itemNode }) => (

@@ -2,11 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import styled from 'styled-components';
 import TopAppBar from '@material/react-top-app-bar'
 import MaterialIcon from '@material/react-material-icon'
 
 import './layout.css'
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 960;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -36,18 +43,11 @@ const Layout = ({ children }) => (
             <MaterialIcon key="contact_support" icon="contact_support" />,
           ]}
         />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            paddingLeft: '1.0875rem',
-            paddingRight: '1.0875rem',
-            paddingBottom: ' 1.45rem',
-          }}
+        <Container
           className="mdc-top-app-bar--fixed-adjust"
         >
           {children}
-        </div>
+        </Container>
       </>
     )}
   />

@@ -8,7 +8,7 @@ import MaterialIcon from '@material/react-material-icon'
 
 import './layout.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,9 +31,9 @@ const Layout = ({ children, data }) => (
         <TopAppBar
           title={data.site.siteMetadata.title}
           actionItems={[
-            <MaterialIcon icon='home' />,
-            <MaterialIcon icon='info' />,
-            <MaterialIcon icon='contact_support' />,
+            <MaterialIcon key="home" icon="home" />,
+            <MaterialIcon key="info" icon="info" />,
+            <MaterialIcon key="contact_support" icon="contact_support" />,
           ]}
         />
         <div

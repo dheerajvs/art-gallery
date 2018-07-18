@@ -43,6 +43,12 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - name: "home"
+        label: "Home Page"
+        file: "src/pages/home.md"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home"}
+          - {label: "Categories", name: "categories", widget: "list", fields: [{label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title"}]}
       - name: "about"
         label: "About Page"
         file: "src/pages/about.md"

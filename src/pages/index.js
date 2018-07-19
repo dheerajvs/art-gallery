@@ -1,6 +1,7 @@
 import React from 'react'
-import { graphql, push } from 'gatsby'
 import PropTypes from 'prop-types'
+import { graphql, push } from 'gatsby'
+import { Margin } from 'styled-components-spacing'
 
 import { Carousel, CarouselItem } from '../components/carousel'
 import { CategoryButton } from '../components/button'
@@ -20,11 +21,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       {categories.map(({ node: categoryNode }) => (
         <section key={categoryNode.fields.slug}>
-          <header>
-            <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
-              {categoryNode.frontmatter.title}
-            </CategoryButton>
-          </header>
+          <Margin top={3} bottom={1}>
+            <header>
+              <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
+                {categoryNode.frontmatter.title}
+              </CategoryButton>
+            </header>
+          </Margin>
           <Carousel>
             {items.filter(({ node: itemNode }) => (
               itemNode.frontmatter.categories.find(({ category }) =>

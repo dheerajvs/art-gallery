@@ -2,16 +2,19 @@
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dheeraj Vepakomma <dheerajvs@gmail.com>",
   "dependencies": {
     "@material/react-button": "^0.3.0",
     "@material/react-card": "^0.3.0",
     "@material/react-material-icon": "^0.3.0",
     "@material/react-top-app-bar": "^0.3.0",
+    "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "2.0.0-beta.36",
     "gatsby-plugin-netlify": "next",
     "gatsby-plugin-netlify-cms": "next",
     "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sass": "next",
+    "gatsby-plugin-styled-components": "next",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "netlify-cms": "^1.9.3",
@@ -21,7 +24,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.3.3"
+    "styled-components": "^3.3.3",
+    "styled-components-spacing": "^3.1.0"
   },
   "keywords": [
     "gatsby"
@@ -29,11 +33,12 @@
   "license": "MIT",
   "scripts": {
     "build-css": "node-sass-chokidar --include-path node_modules/ src/ -o src/",
-    "develop-css": "npm run build-css && node-sass-chokidar --include-path node_modules/ src/ -o src/ --watch --recursive",
+    "develop-css": "yarn build-css && node-sass-chokidar --include-path node_modules/ src/ -o src/ --watch --recursive",
     "build-js": "gatsby build",
-    "build": "npm-run-all -p build-css build-js",
+    "build": "run-s build-css build-js",
     "develop-js": "gatsby develop",
-    "develop": "npm-run-all -p develop-css develop-js",
+    "develop": "run-p develop-css develop-js",
+    "clean": "rimraf public/ .cache/",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -44,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/dheerajvs/art-gallery"
   }
 }

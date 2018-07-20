@@ -7,7 +7,7 @@ const Item = ({ data }) => {
   const { markdownRemark: item } = data
 
   return (
-    <Layout>
+    <Layout title={item.frontmatter.title}>
       <div>{item.frontmatter.title}</div>
     </Layout>
   )

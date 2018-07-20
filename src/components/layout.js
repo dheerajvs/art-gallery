@@ -15,7 +15,7 @@ const Container = styled.div`
   padding-bottom: 1.5rem;
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ title, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -36,7 +36,7 @@ const Layout = ({ children }) => (
           ]}
         />
         <TopAppBar
-          title={data.site.siteMetadata.title}
+          title={title || data.site.siteMetadata.title}
           actionItems={[
             <MaterialIcon key="home" icon="home" />,
             <MaterialIcon key="info" icon="info" />,
@@ -54,6 +54,7 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

@@ -43,7 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
     items.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`src/templates/item.js`),
+        component: path.resolve(`src/templates/item/item.js`),
         context: {
           id: node.id
         },
@@ -89,4 +89,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+}
+
+exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(getConfig().context, 'src'), 'node_modules']
+    },
+  });
 }

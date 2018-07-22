@@ -10,8 +10,6 @@ import './layout.css'
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 960;
-  padding-left: 1rem;
   padding-bottom: 1.5rem;
 `
 

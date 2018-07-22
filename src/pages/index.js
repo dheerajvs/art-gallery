@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql, push } from 'gatsby'
 import { Margin } from 'styled-components-spacing'
 
-import { Carousel, CarouselItem } from '../components/carousel'
-import { CategoryButton } from '../components/button'
-import Layout from '../components/layout'
+import { Carousel, CarouselItem } from 'components/carousel'
+import { CategoryButton } from 'components/button'
+import Layout from 'components/layout'
 import './index.css'
 
 const IndexPage = ({ data }) => {
@@ -19,31 +19,33 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      {categories.map(({ node: categoryNode }) => (
-        <section key={categoryNode.fields.slug}>
-          <Margin top={3} bottom={1}>
-            <header>
-              <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
-                {categoryNode.frontmatter.title}
-              </CategoryButton>
-            </header>
-          </Margin>
-          <Carousel>
-            {items.filter(({ node: itemNode }) => (
-              itemNode.frontmatter.categories.find(({ category }) =>
-                category === categoryNode.frontmatter.title
-              )
-            )).map(({ node: itemNode }) => (
-              <CarouselItem
-                key={itemNode.fields.slug}
-                imageUrl={itemNode.frontmatter.image}
-                title={itemNode.frontmatter.title}
-                onClick={() => push(itemNode.fields.slug)}
-              />
-            ))}
-          </Carousel>
-        </section>
-      ))}
+      <Margin left={2}>
+        {categories.map(({ node: categoryNode }) => (
+          <section key={categoryNode.fields.slug}>
+            <Margin top={3} bottom={1}>
+              <header>
+                <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
+                  {categoryNode.frontmatter.title}
+                </CategoryButton>
+              </header>
+            </Margin>
+            <Carousel>
+              {items.filter(({ node: itemNode }) => (
+                itemNode.frontmatter.categories.find(({ category }) =>
+                  category === categoryNode.frontmatter.title
+                )
+              )).map(({ node: itemNode }) => (
+                <CarouselItem
+                  key={itemNode.fields.slug}
+                  imageUrl={itemNode.frontmatter.image}
+                  title={itemNode.frontmatter.title}
+                  onClick={() => push(itemNode.fields.slug)}
+                />
+              ))}
+            </Carousel>
+          </section>
+        ))}
+      </Margin>
     </Layout>
   )
 }

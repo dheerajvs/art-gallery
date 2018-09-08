@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-// import styled from 'styled-components';
-// import TopAppBar from '@material/react-top-app-bar'
-// import MaterialIcon from '@material/react-material-icon'
-
-// import './layout.css'
+import AppBar from '@material-ui/core/AppBar'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
+import Toolbar from '@material-ui/core/Toolbar'
+// import Typography from '@material-ui/core/Typography'
 
 // const Container = styled.div`
 //   margin: 0 auto;
@@ -26,6 +27,7 @@ const Layout = ({ title, children }) => (
     `}
     render={data => (
       <>
+        <CssBaseline />
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -33,6 +35,15 @@ const Layout = ({ title, children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
+        <AppBar>
+          <Toolbar>
+            <Tabs value={0}>
+              <Tab label="Gallery" />
+              <Tab label="About" />
+              <Tab label="Contact" href="#" />
+            </Tabs>
+          </Toolbar>
+        </AppBar>
       </>
     )}
   />

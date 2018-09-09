@@ -4831,7 +4831,7 @@ gatsby-image@next:
     prop-types "^15.6.1"
     react-testing-library "^4.1.7"
 
-gatsby-link@^2.0.0-rc.2:
+gatsby-link@^2.0.0-rc.2, gatsby-link@next:
   version "2.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-rc.2.tgz#e6f54bc9ae8f825136fbdb1ad789c2dbbf025d8a"
   dependencies:
@@ -6879,12 +6879,6 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-justified-layout@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/justified-layout/-/justified-layout-2.1.1.tgz#22da0c296d3a95b7a3d5fb7f48dbbe0e6539b7f1"
-  dependencies:
-    merge "1.2.0"
-
 jwt-decode@^2.1.0, jwt-decode@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-2.2.0.tgz#7d86bd56679f58ce6a84704a657dd392bba81a79"
@@ -7503,10 +7497,6 @@ merge-stream@^1.0.0, merge-stream@^1.0.1:
 merge2@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.2.2.tgz#03212e3da8d86c4d8523cebd6318193414f94e34"
-
-merge@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/merge/-/merge-1.2.0.tgz#7531e39d4949c281a66b8c5a6e0265e8b05894da"
 
 methods@~1.1.2:
   version "1.1.2"

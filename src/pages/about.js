@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-// import styled from 'styled-components'
-// import Button from '@material/react-button'
-// import Card, {
-//   CardActions,
-//   CardActionButtons,
-// } from '@material/react-card'
-// import AvatarHeader from 'components/avatarHeader'
+import Button from '@material-ui/core/Button'
+import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
+
 import Layout from 'components/layout'
 
 // const AboutCard = styled(Card)`
@@ -85,6 +86,15 @@ const About = ({ data }) => {
 
   return (
     <Layout>
+      <Grid container justify="center" spacing={24}>
+        <Grid item>
+          <Card>
+            <CardContent>
+              About
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
     </Layout>
   )
       // <section>

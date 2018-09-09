@@ -13,6 +13,9 @@ import { withStyles } from '@material-ui/core/styles'
 import Layout from 'components/layout'
 
 const styles = theme => ({
+  root: {
+    marginTop: -16
+  },
   button: {
     ...theme.typography.title,
     color: theme.palette.primary.main,
@@ -51,7 +54,10 @@ const IndexPage = ({ classes, data }) => {
 
   return (
     <Layout>
-      <Grid container direction="column" wrap="nowrap" spacing={16}>
+      <Grid
+        className={classes.root}
+        container direction="column" wrap="nowrap" spacing={16}
+      >
         {categories.map(({ node: categoryNode }) => (
           <Grid
             key={categoryNode.fields.slug}

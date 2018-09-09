@@ -6,6 +6,7 @@ import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -16,8 +17,10 @@ const styles = () => ({
     color: 'green',
   },
   image: {
-    maxWidth: 380
-  }
+    boxShadow: '0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12)',
+    maxWidth: '100%',
+    maxHeight: 'calc(100vh - 116px)',
+  },
 })
 
 const Item = ({ classes, data }) => {
@@ -25,9 +28,11 @@ const Item = ({ classes, data }) => {
 
   return (
     <Layout>
-      <Grid container justify="center" spacing={24}>
+      <Grid container justify="center" spacing={32}>
         <Grid item>
-          <img className={classes.image} src={item.large_image} alt={item.title}/>
+          <img
+            className={classes.image} src={item.large_image} alt={item.title}
+          />
         </Grid>
         <Grid item>
           <Card>
@@ -69,38 +74,6 @@ const Item = ({ classes, data }) => {
     </Layout>
   )
 }
-      // <MainBox>
-      //   <MainImageBox>
-      //     <MainImage src={item.large_image} alt={item.title} />
-      //   </MainImageBox>
-      //   <DescriptionCard>
-      //     <CardContent>
-      //       <ImageTitle>{item.title}</ImageTitle>
-      //       <ImageSubtitle>{item.medium}</ImageSubtitle>
-      //       <ImageDescription>{item.description}</ImageDescription>
-      //       <ImageDescription>
-      //         {`${item.width} \xD7 ${item.height} inches`}
-      //         {` (${Math.round(item.width * 2.54)}`}
-      //         {` \xD7 ${Math.round(item.height * 2.54)} cm)`}
-      //       </ImageDescription>
-      //       {item.sold && (
-      //         <ImageDescription>{
-      //           `Sold out ${
-      //             item.available ? '(available as commissioned work)' : ''
-      //           }`
-      //         }</ImageDescription>
-      //       )}
-      //     </CardContent>
-      //     <CardActions>
-      //       <CardActionButtons>
-      //         <Button>Enquire</Button>
-      //       </CardActionButtons>
-      //       <CardActionIcons>
-      //         <MaterialIcon icon="share" hasRipple />
-      //       </CardActionIcons>
-      //     </CardActions>
-      //   </DescriptionCard>
-      // </MainBox>
 
 Item.propTypes = {
   classes: PropTypes.object.isRequired,

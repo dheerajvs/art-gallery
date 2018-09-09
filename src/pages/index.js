@@ -19,6 +19,12 @@ const styles = theme => ({
     marginLeft: -16,
     textTransform: 'none'
   },
+  carousel: {
+    overflowX: 'auto',
+    '&::-webkit-scrollbar': {
+      display: 'none'
+    }
+  },
   cardContent: {
     padding: '8px 16px',
     '&:last-child': {
@@ -45,12 +51,12 @@ const IndexPage = ({ classes, data }) => {
 
   return (
     <Layout>
-      <Grid container spacing={16}>
+      <Grid container direction="column" wrap="nowrap" spacing={16}>
         {categories.map(({ node: categoryNode }) => (
           <Grid
             key={categoryNode.fields.slug}
             item xs={12}
-            container spacing={8}
+            container direction="column" wrap="nowrap" spacing={8}
             component="section"
           >
             <Grid item component="header">
@@ -62,7 +68,10 @@ const IndexPage = ({ classes, data }) => {
                 {categoryNode.frontmatter.title}
               </Button>
             </Grid>
-            <Grid item container spacing={16}>
+            <Grid
+              className={classes.carousel}
+              item container wrap="nowrap" spacing={16}
+            >
               {items.filter(({ node: itemNode }) => (
                 itemNode.frontmatter.categories.find(({ category }) =>
                   category === categoryNode.frontmatter.title

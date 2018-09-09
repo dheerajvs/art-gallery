@@ -4,17 +4,18 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import AppBar from '@material-ui/core/AppBar'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
+import Tabs from '@material-ui/core/Tabs'
 import Toolbar from '@material-ui/core/Toolbar'
-// import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 
-// const Container = styled.div`
-//   margin: 0 auto;
-//   padding-bottom: 1.5rem;
-// `
+const styles = () => ({
+  container: {
+    padding: 16
+  }
+})
 
-const Layout = ({ title, children }) => (
+const Layout = ({ children, classes }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -35,7 +36,7 @@ const Layout = ({ title, children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <AppBar>
+        <AppBar position="static">
           <Toolbar>
             <Tabs value={0}>
               <Tab label="Gallery" />
@@ -44,27 +45,17 @@ const Layout = ({ title, children }) => (
             </Tabs>
           </Toolbar>
         </AppBar>
+        <div className={classes.container}>
+          {children}
+        </div>
       </>
     )}
   />
 )
-        // <TopAppBar
-        //   title={title || data.site.siteMetadata.title}
-        //   actionItems={[
-        //     <MaterialIcon key="home" icon="home" />,
-        //     <MaterialIcon key="info" icon="info" />,
-        //     <MaterialIcon key="contact_support" icon="contact_support" />,
-        //   ]}
-        // />
-        // <Container
-        //   className="mdc-top-app-bar--fixed-adjust"
-        // >
-        //   {children}
-        // </Container>
 
 Layout.propTypes = {
-  title: PropTypes.string,
   children: PropTypes.node.isRequired,
+  classes: PropTypes.object.isRequired,
 }
 
-export default Layout
+export default withStyles(styles)(Layout)

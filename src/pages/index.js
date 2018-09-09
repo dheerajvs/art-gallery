@@ -1,14 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, push } from 'gatsby'
-// import { Margin } from 'styled-components-spacing'
+import { graphql } from 'gatsby'
+import Button from '@material-ui/core/Button'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 
-// import { Carousel, CarouselItem } from 'components/carousel'
-// import { CategoryButton } from 'components/button'
 import Layout from 'components/layout'
-// import './index.css'
 
-const IndexPage = ({ data }) => {
+const styles = () => ({
+  cardContent: {
+    padding: '8px 16px',
+    '&:last-child': {
+      paddingBottom: 8
+    }
+  },
+  cardMedia: {
+    height: 150
+  },
+  title: {
+    whiteSpace: 'nowrap',
+    width: 118
+  }
+})
+
+const IndexPage = ({ classes, data }) => {
   const { edges } = data.allMarkdownRemark
   const categories = edges.filter(
     ({ node }) => node.frontmatter.templateKey === 'category'
@@ -19,38 +39,55 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Grid container spacing={16}>
+        {categories.map(({ node: categoryNode }) => (
+          <Grid
+            key={categoryNode.fields.slug}
+            item xs={12}
+            container spacing={8}
+            component="section"
+          >
+            <Grid item component="header">
+              <Button href={categoryNode.fields.slug} color="primary">
+                {categoryNode.frontmatter.title}
+              </Button>
+            </Grid>
+            <Grid item container spacing={16}>
+              {items.filter(({ node: itemNode }) => (
+                itemNode.frontmatter.categories.find(({ category }) =>
+                  category === categoryNode.frontmatter.title
+                )
+              )).map(({ node: itemNode }) => (
+                <Grid key={itemNode.fields.slug} item>
+                  <Card>
+                    <CardActionArea href={itemNode.fields.slug}>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image={itemNode.frontmatter.image}
+                        title={itemNode.frontmatter.title}
+                      />
+                      <CardContent className={classes.cardContent}>
+                        <Typography
+                          className={classes.title}
+                          align="center" noWrap variant="body1"
+                        >
+                          {itemNode.frontmatter.title}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+        ))}
+      </Grid>
     </Layout>
   )
 }
-      // <Margin left={2}>
-      //   {categories.map(({ node: categoryNode }) => (
-      //     <section key={categoryNode.fields.slug}>
-      //       <Margin top={3} bottom={1}>
-      //         <header>
-      //           <CategoryButton onClick={() => push(categoryNode.fields.slug)}>
-      //             {categoryNode.frontmatter.title}
-      //           </CategoryButton>
-      //         </header>
-      //       </Margin>
-      //       <Carousel>
-      //         {items.filter(({ node: itemNode }) => (
-      //           itemNode.frontmatter.categories.find(({ category }) =>
-      //             category === categoryNode.frontmatter.title
-      //           )
-      //         )).map(({ node: itemNode }) => (
-      //           <CarouselItem
-      //             key={itemNode.fields.slug}
-      //             imageUrl={itemNode.frontmatter.image}
-      //             title={itemNode.frontmatter.title}
-      //             onClick={() => push(itemNode.fields.slug)}
-      //           />
-      //         ))}
-      //       </Carousel>
-      //     </section>
-      //   ))}
-      // </Margin>
 
 IndexPage.propTypes = {
+  classes: PropTypes.object.isRequired,
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -58,7 +95,7 @@ IndexPage.propTypes = {
   }),
 }
 
-export default IndexPage
+export default withStyles(styles)(IndexPage)
 
 export const pageQuery = graphql`
   query IndexQuery {

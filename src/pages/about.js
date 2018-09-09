@@ -1,128 +1,122 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import Button from '@material/react-button'
-import Card, {
-  CardActions,
-  CardActionButtons,
-} from '@material/react-card'
-import AvatarHeader from 'components/avatarHeader'
+import Avatar from '@material-ui/core/Avatar'
+import Button from '@material-ui/core/Button'
+import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
+
 import Layout from 'components/layout'
 
-const AboutCard = styled(Card)`
-  margin: 24px 16px 16px;
-  padding: 16px 16px 8px;
-`
+const styles = () => ({
+  avatar: {
+    width: 56,
+    height: 56
+  },
+  aboutContainer: {
+    maxWidth: 1024,
+    width: '100%',
+  },
+  testimonialContainer: {
+    maxWidth: 240,
+  },
+  quote: {
+    lineHeight: 0,
+    paddingTop: 16,
+  },
+  fullHeight: {
+    height: '100%',
+  },
+})
 
-const AboutBody = styled.div`
-  h2 {
-    font-size: 1.125em;
-    font-weight: 600;
-    margin: 0;
-  }
-  p {
-    text-align: justify;
-  }
-`
-
-const TestimonialSection = styled.section`
-`
-
-const TestimonialHeader = styled.h2`
-  font-size: 1.5em;
-  font-weight: 500;
-  text-align: center;
-  margin: 32px 0 24px;
-`
-
-const TestimonialContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center;
-  margin-bottom: 20px;
-`
-
-const TestimonialCard = styled(Card)`
-  max-width: 200px;
-  padding: 16px;
-  margin: 0 16px 16px;
-`
-
-const TestimonialQuote = styled.blockquote`
-  margin: 0;
-  text-align: center;
-  flex-grow: 1;
-  :before {
-    content: "\u201C";
-    display: block;
-    font-size: 48px;
-    line-height: 0;
-    padding-top: 16px;
-    text-align: left;
-  }
-  :after {
-    content: "\u201D";
-    display: block;
-    font-size: 48px;
-    line-height: 0;
-    padding-top: 24px;
-    text-align: right;
-  }
-`
-
-const TestimonialAuthor = styled.div`
-  font-size: 1.5em;
-  margin: 16px 0 8px;
-`
-
-const TestimonialPlace = styled.div`
-`
-
-const About = ({ data }) => {
+const About = ({ classes, data }) => {
   const { frontmatter, html } = data.allMarkdownRemark.edges[0].node
 
   return (
     <Layout>
-      <section>
-        <AboutCard>
-          <AvatarHeader
-            avatarUrl={frontmatter.avatar}
-            title="About the Artist"
-            subtitle={frontmatter.name}
-          />
-          <AboutBody dangerouslySetInnerHTML={{ __html: html }}/>
-          <CardActions>
-            <CardActionButtons>
-              <Button>Contact the Artist</Button>
-            </CardActionButtons>
-          </CardActions>
-        </AboutCard>
-      </section>
-      <TestimonialSection>
-        <TestimonialHeader>Testimonials</TestimonialHeader>
-        <TestimonialContainer>{
+      <Grid container direction="column" alignItems="center" spacing={24}>
+        <Grid className={classes.aboutContainer} item>
+          <Card>
+            <CardContent>
+              <Grid container alignItems="center" spacing={16}>
+                <Grid item>
+                  <Avatar
+                    className={classes.avatar}
+                    src={frontmatter.avatar} alt={frontmatter.name}
+                  />
+                </Grid>
+                <Grid item>
+                  <Typography variant="headline">About the Artist</Typography>
+                  <Typography variant="subheading">
+                    {frontmatter.name}
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Typography dangerouslySetInnerHTML={{ __html: html }}/>
+            </CardContent>
+            <CardActions>
+              <Button color="primary" variant="raised">Contact the Artist</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item>
+          <Typography variant="display1">Testimonials</Typography>
+        </Grid>
+        <Grid item container justify="center" spacing={24}>{
           frontmatter.testimonials.map(({ quote, title, place }) => (
-            <TestimonialCard key={title}>
-              <TestimonialQuote>{quote}</TestimonialQuote>
-              <TestimonialAuthor>{title}</TestimonialAuthor>
-              <TestimonialPlace>{place}</TestimonialPlace>
-            </TestimonialCard>
+            <Grid key={title} className={classes.testimonialContainer} item>
+              <Card className={classes.fullHeight}>
+                <CardContent className={classes.fullHeight}>
+                  <Grid
+                    className={classes.fullHeight}
+                    container direction="column" justify="space-between"
+                  >
+                    <Grid item>
+                      <Typography
+                        className={classes.quote}
+                        variant="display3" component="blockquote"
+                      >
+                        &#x201C;
+                      </Typography>
+                      <Typography
+                        align="center" variant="body1" component="blockquote"
+                      >
+                        {quote}
+                      </Typography>
+                      <Typography
+                        className={classes.quote}
+                        align="right" variant="display3" component="blockquote"
+                      >
+                        &#x201D;
+                      </Typography>
+                    </Grid>
+                    <Grid item>
+                      <Typography variant="headline">{title}</Typography>
+                      <Typography variant="subheading">{place}</Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </Card>
+            </Grid>
           ))
-        }</TestimonialContainer>
-      </TestimonialSection>
+        }</Grid>
+      </Grid>
     </Layout>
   )
 }
 
 About.propTypes = {
+  classes: PropTypes.object.isRequired,
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.object
   }),
 }
 
-export default About
+export default withStyles(styles)(About)
 
 export const pageQuery = graphql`
   query AboutQuery {

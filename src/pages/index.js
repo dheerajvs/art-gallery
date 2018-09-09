@@ -54,7 +54,7 @@ const IndexPage = ({ classes, data }) => {
   )
 
   return (
-    <Layout>
+    <Layout slug="/">
       <Grid
         className={classes.root}
         container direction="column" wrap="nowrap" spacing={16}

@@ -16,9 +16,9 @@ const styles = () => ({
   }
 })
 
-const Layout = ({ children, classes }) => {
+const Layout = ({ children, classes, slug }) => {
 
-  const tabs = ['/', '/about', '/contact']
+  const tabs = ['/', '/about/', '/contact/']
 
   const onTabChange = (event, index) => {
     if (index !== getTabValue()) {
@@ -26,7 +26,7 @@ const Layout = ({ children, classes }) => {
     }
   }
 
-  const getTabValue = () => Math.max(0, tabs.indexOf(location.pathname))
+  const getTabValue = () => Math.max(0, tabs.indexOf(slug))
 
   return (
     <StaticQuery
@@ -68,6 +68,7 @@ const Layout = ({ children, classes }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
+  slug: PropTypes.string,
 }
 
 export default withStyles(styles)(Layout)

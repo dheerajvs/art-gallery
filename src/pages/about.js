@@ -34,10 +34,10 @@ const styles = () => ({
 })
 
 const About = ({ classes, data }) => {
-  const { frontmatter, html } = data.allMarkdownRemark.edges[0].node
+  const { fields, frontmatter, html } = data.allMarkdownRemark.edges[0].node
 
   return (
-    <Layout>
+    <Layout slug={fields.slug}>
       <Grid container direction="column" alignItems="center" spacing={24}>
         <Grid className={classes.aboutContainer} item>
           <Card>
@@ -131,6 +131,9 @@ export const pageQuery = graphql`
               place
               quote
             }
+          }
+          fields {
+            slug
           }
           html
         }

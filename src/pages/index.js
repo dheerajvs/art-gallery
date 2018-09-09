@@ -12,7 +12,13 @@ import { withStyles } from '@material-ui/core/styles'
 
 import Layout from 'components/layout'
 
-const styles = () => ({
+const styles = theme => ({
+  button: {
+    ...theme.typography.title,
+    color: theme.palette.primary.main,
+    marginLeft: -16,
+    textTransform: 'none'
+  },
   cardContent: {
     padding: '8px 16px',
     '&:last-child': {
@@ -25,7 +31,7 @@ const styles = () => ({
   title: {
     whiteSpace: 'nowrap',
     width: 118
-  }
+  },
 })
 
 const IndexPage = ({ classes, data }) => {
@@ -48,7 +54,11 @@ const IndexPage = ({ classes, data }) => {
             component="section"
           >
             <Grid item component="header">
-              <Button href={categoryNode.fields.slug} color="primary">
+              <Button
+                className={classes.button}
+                color="primary"
+                href={categoryNode.fields.slug}
+              >
                 {categoryNode.frontmatter.title}
               </Button>
             </Grid>

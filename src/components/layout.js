@@ -21,7 +21,9 @@ const Layout = ({ children, classes }) => {
   const tabs = ['/', '/about', '/contact']
 
   const onTabChange = (event, index) => {
-    navigate(tabs[index])
+    if (index !== getTabValue()) {
+      navigate(tabs[index])
+    }
   }
 
   const getTabValue = () => Math.max(0, tabs.indexOf(location.pathname))

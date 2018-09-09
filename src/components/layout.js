@@ -8,7 +8,6 @@ import AppBar from '@material-ui/core/AppBar'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Tab from '@material-ui/core/Tab'
 import Tabs from '@material-ui/core/Tabs'
-import Toolbar from '@material-ui/core/Toolbar'
 import { withStyles } from '@material-ui/core/styles'
 
 const styles = () => ({
@@ -17,62 +16,51 @@ const styles = () => ({
   }
 })
 
-class Layout extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      tabValue: 0,
-    }
+const Layout = ({ children, classes }) => {
+
+  const tabs = ['/', '/about', '/contact']
+
+  const onTabChange = (event, index) => {
+    navigate(tabs[index])
   }
 
-  onTabChange(event, tabValue) {
-    this.setState({ tabValue }, () => {
-      navigate(['/', '/about', '/contact'][tabValue])
-    })
-  }
+  const getTabValue = () => Math.max(0, tabs.indexOf(location.pathname))
 
-  render() {
-    const { children, classes } = this.props
-    const { tabValue } = this.state
-
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
             }
           }
-        `}
-        render={data => (
-          <>
-            <CssBaseline />
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
-              ]}
-            />
-            <AppBar position="static">
-              <Toolbar>
-                <Tabs value={tabValue} onChange={this.onTabChange.bind(this)}>
-                  <Tab label="Gallery"/>
-                  <Tab label="About"/>
-                  <Tab label="Contact"/>
-                </Tabs>
-              </Toolbar>
-            </AppBar>
-            <div className={classes.container}>
-              {children}
-            </div>
-          </>
-        )}
-      />
-    )
-  }
+        }
+      `}
+      render={data => (
+        <>
+          <CssBaseline />
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              { name: 'description', content: 'Sample' },
+              { name: 'keywords', content: 'sample, something' },
+            ]}
+          />
+          <AppBar position="static">
+            <Tabs value={getTabValue()} onChange={onTabChange}>
+              <Tab label="Gallery"/>
+              <Tab label="About"/>
+              <Tab label="Contact"/>
+            </Tabs>
+          </AppBar>
+          <div className={classes.container}>
+            {children}
+          </div>
+        </>
+      )}
+    />
+  )
 }
 
 Layout.propTypes = {

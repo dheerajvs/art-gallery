@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { navigate } from 'gatsby-link'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -69,7 +70,7 @@ const IndexPage = ({ classes, data }) => {
               <Button
                 className={classes.button}
                 color="primary"
-                href={categoryNode.fields.slug}
+                onClick={() => navigate(categoryNode.fields.slug)}
               >
                 {categoryNode.frontmatter.title}
               </Button>
@@ -85,7 +86,7 @@ const IndexPage = ({ classes, data }) => {
               )).map(({ node: itemNode }) => (
                 <Grid key={itemNode.fields.slug} item>
                   <Card>
-                    <CardActionArea href={itemNode.fields.slug}>
+                    <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
                       <CardMedia
                         className={classes.cardMedia}
                         image={itemNode.frontmatter.image}

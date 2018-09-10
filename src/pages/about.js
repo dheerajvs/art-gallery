@@ -18,11 +18,10 @@ const styles = () => ({
     width: 56,
     height: 56
   },
-  aboutContainer: {
+  container: {
     maxWidth: 1024,
-    width: '100%',
   },
-  testimonialContainer: {
+  testimonialCard: {
     maxWidth: 240,
   },
   quote: {
@@ -39,8 +38,8 @@ const About = ({ classes, data }) => {
 
   return (
     <Layout slug={fields.slug}>
-      <Grid container direction="column" alignItems="center" spacing={24}>
-        <Grid className={classes.aboutContainer} item>
+      <Grid container direction="column" noWrap alignItems="center" spacing={24}>
+        <Grid className={classes.container} item>
           <Card>
             <CardContent>
               <Grid container alignItems="center" spacing={16}>
@@ -67,9 +66,12 @@ const About = ({ classes, data }) => {
         <Grid item>
           <Typography variant="display1">Testimonials</Typography>
         </Grid>
-        <Grid item container justify="center" spacing={24}>{
+        <Grid
+          className={classes.container}
+          item container justify="center" spacing={24}
+        >{
           frontmatter.testimonials.map(({ quote, title, place }) => (
-            <Grid key={title} className={classes.testimonialContainer} item>
+            <Grid key={title} className={classes.testimonialCard} item>
               <Card className={classes.fullHeight}>
                 <CardContent className={classes.fullHeight}>
                   <Grid

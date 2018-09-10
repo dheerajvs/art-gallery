@@ -13,6 +13,9 @@ import withRoot from 'withRoot'
 import Layout from 'components/layout'
 
 const styles = () => ({
+  cardContainer: {
+    maxWidth: 640
+  },
   available: {
     color: 'green',
   },
@@ -34,7 +37,7 @@ const Item = ({ classes, data }) => {
             className={classes.image} src={item.large_image} alt={item.title}
           />
         </Grid>
-        <Grid item>
+        <Grid className={classes.cardContainer} item>
           <Card>
             <CardContent>
               <Typography variant="headline">{item.title}</Typography>

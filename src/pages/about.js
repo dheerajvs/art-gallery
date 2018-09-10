@@ -38,7 +38,7 @@ const About = ({ classes, data }) => {
 
   return (
     <Layout slug={fields.slug}>
-      <Grid container direction="column" noWrap alignItems="center" spacing={24}>
+      <Grid container direction="column" wrap="nowrap" alignItems="center" spacing={24}>
         <Grid className={classes.container} item>
           <Card>
             <CardContent>
@@ -110,7 +110,7 @@ const About = ({ classes, data }) => {
         }</Grid>
         <Grid
           item container component="footer"
-          direction="column" alignItems="center" noWrap spacing={8}
+          direction="column" alignItems="center" wrap="nowrap" spacing={8}
         >
           <Grid item>
             <Typography variant="caption">

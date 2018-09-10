@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
 
+import withRoot from 'withRoot'
 import Layout from 'components/layout'
 
 const styles = () => ({
@@ -83,7 +84,8 @@ const About = ({ classes, data }) => {
                         &#x201C;
                       </Typography>
                       <Typography
-                        align="center" variant="body1" component="blockquote"
+                        align="center" gutterBottom variant="body1"
+                        component="blockquote"
                       >
                         {quote}
                       </Typography>
@@ -116,7 +118,7 @@ About.propTypes = {
   }),
 }
 
-export default withStyles(styles)(About)
+export default withRoot(withStyles(styles)(About))
 
 export const pageQuery = graphql`
   query AboutQuery {

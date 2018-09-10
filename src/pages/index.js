@@ -10,6 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
+import withRoot from 'withRoot'
 
 import Layout from 'components/layout'
 
@@ -121,7 +122,7 @@ IndexPage.propTypes = {
   }),
 }
 
-export default withStyles(styles)(IndexPage)
+export default withRoot(withStyles(styles)(IndexPage))
 
 export const pageQuery = graphql`
   query IndexQuery {

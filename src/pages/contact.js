@@ -61,7 +61,7 @@ class Contact extends React.Component {
           <Grid
             className={classes.container} item
             name="contact-form" component="form" method="POST"
-            action="#submit-message" data-netlify="true"
+            action="/contact/#submit-message" data-netlify="true"
           >
             <Card>
               <CardContent>

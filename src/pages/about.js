@@ -108,6 +108,21 @@ const About = ({ classes, data }) => {
             </Grid>
           ))
         }</Grid>
+        <Grid
+          item container component="footer"
+          direction="column" alignItems="center" noWrap spacing={8}
+        >
+          <Grid item>
+            <Typography variant="caption">
+              Website handcrafted with &#x2764;&#xfe0f; by Dheeraj V S
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="caption">
+              Copyright &copy; 2018, Sowmya B A. All rights reserved.
+            </Typography>
+          </Grid>
+        </Grid>
       </Grid>
     </Layout>
   )

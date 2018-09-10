@@ -37,14 +37,19 @@ const styles = theme => ({
 class Contact extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       snackOpen: false
+    }
+
+    this.handleCloseSnack = () => {
+      this.setState({ snackOpen: false })
     }
   }
 
   componentDidMount() {
     if (typeof(window) !== 'undefined'
-      && window.location.hash === '#submit-message') {
+      && window.location.pathname === '/submitted/') {
       this.setState({ snackOpen: true })
     }
   }

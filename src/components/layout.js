@@ -26,7 +26,7 @@ const Layout = ({ children, classes, slug }) => {
     }
   }
 
-  const getTabValue = () => Math.max(0, tabs.indexOf(slug))
+  const getTabValue = () => tabs.indexOf(slug)
 
   return (
     <StaticQuery
@@ -50,7 +50,7 @@ const Layout = ({ children, classes, slug }) => {
             ]}
           />
           <AppBar position="static">
-            <Tabs value={getTabValue()} onChange={onTabChange}>
+            <Tabs value={Math.max(0, getTabValue())} onChange={onTabChange}>
               <Tab label="Gallery"/>
               <Tab label="About"/>
               <Tab label="Contact"/>

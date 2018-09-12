@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { navigate } from 'gatsby-link'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
@@ -33,6 +34,10 @@ const styles = () => ({
   },
 })
 
+function handleContactClick() {
+  navigate('/contact/')
+}
+
 const About = ({ classes, data }) => {
   const { fields, frontmatter, html } = data.allMarkdownRemark.edges[0].node
 
@@ -59,7 +64,11 @@ const About = ({ classes, data }) => {
               <Typography dangerouslySetInnerHTML={{ __html: html }}/>
             </CardContent>
             <CardActions>
-              <Button color="primary" variant="raised">Contact the Artist</Button>
+              <Button
+                color="primary" variant="raised" onClick={handleContactClick}
+              >
+                Contact the Artist
+              </Button>
             </CardActions>
           </Card>
         </Grid>

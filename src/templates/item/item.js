@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { navigate } from 'gatsby-link'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -25,6 +26,10 @@ const styles = () => ({
     maxHeight: 'calc(100vh - 116px)',
   },
 })
+
+function handleEnquireClick() {
+  navigate('/contact/')
+}
 
 const Item = ({ classes, data }) => {
   const { frontmatter: item } = data.markdownRemark
@@ -68,7 +73,11 @@ const Item = ({ classes, data }) => {
               )}
             </CardContent>
             <CardActions>
-              <Button size="small" color="primary">Enquire</Button>
+              <Button
+                size="small" color="primary" onClick={handleEnquireClick}
+              >
+                Enquire
+              </Button>
               <Button size="small" color="primary">Share</Button>
             </CardActions>
           </Card>

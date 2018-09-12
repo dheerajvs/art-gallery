@@ -5,14 +5,14 @@ import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Grid from '@material-ui/core/Grid'
-import CloseIcon from '@material-ui/icons/Close'
 import IconButton from '@material-ui/core/IconButton'
 import InputAdornment from '@material-ui/core/InputAdornment'
 import Snackbar from '@material-ui/core/Snackbar'
 import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
-import Person from '@material-ui/icons/Person'
+import Close from '@material-ui/icons/Close'
 import Email from '@material-ui/icons/Email'
+import Person from '@material-ui/icons/Person'
 import Phone from '@material-ui/icons/Phone'
 import Message from '@material-ui/icons/Message'
 import { withStyles } from '@material-ui/core/styles'
@@ -147,7 +147,7 @@ class Contact extends React.Component {
                 className={classes.close}
                 onClick={this.handleCloseSnack}
               >
-                <CloseIcon />
+                <Close />
               </IconButton>,
             ]}
           />

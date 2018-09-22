@@ -13,6 +13,7 @@ import { withStyles } from '@material-ui/core/styles'
 import withRoot from 'withRoot'
 
 import Layout from 'components/layout'
+import Ribbon from 'components/ribbon'
 
 const styles = theme => ({
   root: {
@@ -38,6 +39,10 @@ const styles = theme => ({
   },
   cardMedia: {
     height: 150
+  },
+  ribbonContainer: {
+    overflow: 'visible',
+    position: 'relative',
   },
   title: {
     whiteSpace: 'nowrap',
@@ -86,7 +91,8 @@ const IndexPage = ({ classes, data }) => {
                 )
               )).map(({ node: itemNode }) => (
                 <Grid key={itemNode.fields.slug} item>
-                  <Card>
+                  <Card className={classes.ribbonContainer}>
+                    { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
                     <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
                       <CardMedia
                         className={classes.cardMedia}
@@ -139,6 +145,7 @@ export const pageQuery = graphql`
             categories {
               category
             }
+            sold
           }
         }
       }

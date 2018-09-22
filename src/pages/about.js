@@ -92,10 +92,7 @@ const About = ({ classes, data }) => {
                     container direction="column" justify="space-between"
                   >
                     <Grid item>
-                      <Typography
-                        className={classes.quote}
-                        variant="display3" component="blockquote"
-                      >
+                      <Typography className={classes.quote} variant="display3">
                         &#x201C;
                       </Typography>
                       <Typography
@@ -104,9 +101,8 @@ const About = ({ classes, data }) => {
                       >
                         {quote}
                       </Typography>
-                      <Typography
-                        className={classes.quote}
-                        align="right" variant="display3" component="blockquote"
+                      <Typography className={classes.quote}
+                        align="right" variant="display3"
                       >
                         &#x201D;
                       </Typography>

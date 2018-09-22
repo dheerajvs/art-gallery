@@ -12,8 +12,13 @@ import { withStyles } from '@material-ui/core/styles'
 
 import withRoot from 'withRoot'
 import Layout from '../components/layout'
+import Ribbon from '../components/ribbon'
 
 const styles = () => ({
+  ribbonContainer: {
+    overflow: 'visible',
+    position: 'relative',
+  },
   categoryTitle: {
     marginBottom: 16,
   },
@@ -36,14 +41,16 @@ const Category = props => {
       >
         {category}
       </Typography>
-      <Grid container justify="center" spacing={16}>{
+      <Grid container justify="center" spacing={24}>{
         items.map(({ node: itemNode }) => {
           const image = images.filter(({ node: { relativePath } }) =>
             relativePath === itemNode.frontmatter.large_image.substring(5)
           )[0]
+
           return (
             <Grid key={itemNode.fields.slug} item>
-              <Card>
+              <Card className={classes.ribbonContainer}>
+                { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
                 <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
                   <Img fluid={image.node.childImageSharp.fluid}/>
                   <CardContent className={classes.cardContent}>
@@ -95,6 +102,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             large_image
+            sold
           }
         }
       }
@@ -109,9 +117,6 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 512) {
               ...GatsbyImageSharpFluid
-            }
-            fixed(width: 125, height: 125) {
-              ...GatsbyImageSharpFixed
             }
           }
         }

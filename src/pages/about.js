@@ -23,6 +23,9 @@ const styles = () => ({
     maxWidth: 1024,
     marginBottom: 24,
   },
+  testimonialsTitle: {
+    marginBottom: 16,
+  },
   testimonialCard: {
     maxWidth: 240,
   },
@@ -73,7 +76,7 @@ const About = ({ classes, data }) => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item>
+        <Grid className={classes.testimonialsTitle} item>
           <Typography variant="display1">Testimonials</Typography>
         </Grid>
         <Grid

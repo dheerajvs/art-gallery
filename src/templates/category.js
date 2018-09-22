@@ -1,32 +1,84 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { navigate } from 'gatsby-link'
+import Card from '@material-ui/core/Card'
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardContent from '@material-ui/core/CardContent'
+import Grid from '@material-ui/core/Grid'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
+
+import withRoot from 'withRoot'
 import Layout from '../components/layout'
 
-const Category = ({ data }) => {
+const styles = () => ({
+  categoryTitle: {
+    marginBottom: 16,
+  },
+  imageTitle: {
+    whiteSpace: 'nowrap',
+    width: 118,
+  },
+})
+
+const Category = props => {
+  const { classes, data, pageContext: { category } } = props
   const items = data.allMarkdownRemark.edges
+  const images = data.allFile.edges
 
   return (
     <Layout>
-      <ul>{items.map(({ node }) =>
-        <li key={node.fields.slug}>
-          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-        </li>
-      )}</ul>
+      <Typography
+        className={classes.categoryTitle} align="center" variant="title"
+        color="primary"
+      >
+        {category}
+      </Typography>
+      <Grid container justify="center" spacing={16}>{
+        items.map(({ node: itemNode }) => {
+          const image = images.filter(({ node: { relativePath } }) =>
+            relativePath === itemNode.frontmatter.large_image.substring(5)
+          )[0]
+          return (
+            <Grid key={itemNode.fields.slug} item>
+              <Card>
+                <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
+                  <Img fluid={image.node.childImageSharp.fluid}/>
+                  <CardContent className={classes.cardContent}>
+                    <Typography
+                      className={classes.imageTitle}
+                      align="center" noWrap variant="body1"
+                    >
+                      {itemNode.frontmatter.title}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          )
+        })
+      }</Grid>
     </Layout>
   )
 }
 
 Category.propTypes = {
+  classes: PropTypes.object.isRequired,
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
+    allFile: PropTypes.object,
+  }),
+  pageContext: PropTypes.shape({
+    category: PropTypes.string,
   }),
 }
 
-export default Category
+export default withRoot(withStyles(styles)(Category))
 
 export const pageQuery = graphql`
-  query ItemsByCategory($category: String) {
+  query ItemsByCategory($category: String!, $images: [String]) {
     allMarkdownRemark(
       limit: 1000
       filter: { frontmatter: {
@@ -42,6 +94,25 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            large_image
+          }
+        }
+      }
+    }
+
+    allFile(filter: {
+      relativePath: { in: $images }
+    }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 512) {
+              ...GatsbyImageSharpFluid
+            }
+            fixed(width: 125, height: 125) {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
       }

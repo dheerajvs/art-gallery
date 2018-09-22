@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
- /* eslint-disable react/no-danger */
+/* eslint-env node */
 
 const React = require('react');
 const { renderToString } = require('react-dom/server');

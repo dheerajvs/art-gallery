@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+/* eslint-env node */
+
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -24,6 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
+              large_image
               categories {
                 category
               }
@@ -51,27 +54,26 @@ exports.createPages = ({ actions, graphql }) => {
     })
 
     // Category pages:
-    let categories = []
+    const categoryImages = {}
     // Iterate through each item, putting all found categories into `categories`
     items.forEach(({ node }) => {
       if (_.get(node, `frontmatter.categories`)) {
-        categories = categories.concat(node.frontmatter.categories.map(
-          ({ category }) => category)
-        )
+        node.frontmatter.categories.forEach(({ category }) => {
+            categoryImages[category] = categoryImages[category] || []
+            categoryImages[category].push(node.frontmatter.large_image.slice(5))
+        })
       }
     })
-    // Eliminate duplicate categories
-    categories = _.uniq(categories)
 
     // Make category pages
-    categories.forEach(category => {
+    Object.keys(categoryImages).forEach(category => {
       const categoryPath = `/categories/${_.kebabCase(category)}/`
-
       createPage({
         path: categoryPath,
         component: path.resolve(`src/templates/category.js`),
         context: {
           category,
+          images: categoryImages[category]
         },
       })
     })

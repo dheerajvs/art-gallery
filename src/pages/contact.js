@@ -69,11 +69,11 @@ class Contact extends React.Component {
                 <TextField
                   className={classes.textField} fullWidth margin="normal"
                   id="contact-name" label="Name" name="name" required
-                  autoComplete="name" type="text"
+                  autoComplete="name" type="text" variant="outlined"
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position="start">
-                        <Person />
+                        <Person color="primary" />
                       </InputAdornment>
                     ),
                   }}
@@ -81,11 +81,11 @@ class Contact extends React.Component {
                 <TextField
                   className={classes.textField} fullWidth margin="normal"
                   id="contact-phone" label="Phone" name="phone" required
-                  autoComplete="tel" type="tel"
+                  autoComplete="tel" type="tel" variant="outlined"
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position="start">
-                        <Phone />
+                        <Phone color="primary" />
                       </InputAdornment>
                     ),
                   }}
@@ -93,11 +93,11 @@ class Contact extends React.Component {
                 <TextField
                   className={classes.textField} fullWidth margin="normal"
                   id="contact-email" label="Email" name="email"
-                  autoComplete="email" type="email"
+                  autoComplete="email" type="email" variant="outlined"
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position="start">
-                        <Email />
+                        <Email color="primary" />
                       </InputAdornment>
                     ),
                   }}
@@ -105,11 +105,11 @@ class Contact extends React.Component {
                 <TextField
                   className={classes.textField} fullWidth margin="normal"
                   id="contact-message" label="Message" name="message" type="text"
-                  multiline rows={3} rowsMax={5} required
+                  multiline rows={3} rowsMax={5} required variant="outlined"
                   InputProps={{
                     startAdornment: (
                       <InputAdornment position="start">
-                        <Message />
+                        <Message color="primary" />
                       </InputAdornment>
                     ),
                   }}

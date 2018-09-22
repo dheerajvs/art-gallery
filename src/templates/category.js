@@ -16,7 +16,6 @@ import Ribbon from '../components/ribbon'
 
 const styles = () => ({
   ribbonContainer: {
-    overflow: 'visible',
     position: 'relative',
   },
   categoryTitle: {
@@ -49,20 +48,22 @@ const Category = props => {
 
           return (
             <Grid key={itemNode.fields.slug} item>
-              <Card className={classes.ribbonContainer}>
+              <div className={classes.ribbonContainer}>
                 { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
-                <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
-                  <Img fluid={image.node.childImageSharp.fluid}/>
-                  <CardContent className={classes.cardContent}>
-                    <Typography
-                      className={classes.imageTitle}
-                      align="center" noWrap variant="body1"
-                    >
-                      {itemNode.frontmatter.title}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
+                <Card>
+                  <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
+                    <Img fluid={image.node.childImageSharp.fluid}/>
+                    <CardContent className={classes.cardContent}>
+                      <Typography
+                        className={classes.imageTitle}
+                        align="center" noWrap variant="body1"
+                      >
+                        {itemNode.frontmatter.title}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </div>
             </Grid>
           )
         })

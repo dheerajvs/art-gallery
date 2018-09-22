@@ -41,7 +41,6 @@ const styles = theme => ({
     height: 150
   },
   ribbonContainer: {
-    overflow: 'visible',
     position: 'relative',
   },
   title: {
@@ -91,24 +90,26 @@ const IndexPage = ({ classes, data }) => {
                 )
               )).map(({ node: itemNode }) => (
                 <Grid key={itemNode.fields.slug} item>
-                  <Card className={classes.ribbonContainer}>
+                  <div className={classes.ribbonContainer}>
                     { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
-                    <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
-                      <CardMedia
-                        className={classes.cardMedia}
-                        image={itemNode.frontmatter.image}
-                        title={itemNode.frontmatter.title}
-                      />
-                      <CardContent className={classes.cardContent}>
-                        <Typography
-                          className={classes.title}
-                          align="center" noWrap variant="body1"
-                        >
-                          {itemNode.frontmatter.title}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
+                    <Card>
+                      <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
+                        <CardMedia
+                          className={classes.cardMedia}
+                          image={itemNode.frontmatter.image}
+                          title={itemNode.frontmatter.title}
+                        />
+                        <CardContent className={classes.cardContent}>
+                          <Typography
+                            className={classes.title}
+                            align="center" noWrap variant="body1"
+                          >
+                            {itemNode.frontmatter.title}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  </div>
                 </Grid>
               ))}
             </Grid>

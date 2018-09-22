@@ -53,7 +53,7 @@ class Contact extends React.Component {
     const { classes } = this.props
 
     return (
-      <Layout slug={'/contact/'}>
+      <Layout slug={'/contact/'} titlePrefix="Contact">
         <Grid
           container direction="column" wrap="nowrap" alignItems="center"
           spacing={24}

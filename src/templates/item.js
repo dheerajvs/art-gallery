@@ -35,7 +35,7 @@ const Item = ({ classes, data }) => {
   const { frontmatter: item } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout titlePrefix={item.title}>
       <Grid container justify="center" spacing={32}>
         <Grid item>
           <img

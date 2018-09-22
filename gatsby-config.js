@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Sowmya’s Art Gallery',
+    title: 'Sowmya\u2019s Art Gallery',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Sowmya Art Gallery`,
+        name: `Sowmya\u2019s Art Gallery`,
         short_name: `Art Gallery`,
         start_url: `/`,
         background_color: `#fff`,

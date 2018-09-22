@@ -46,7 +46,7 @@ const About = ({ classes, data }) => {
   const { fields, frontmatter, html } = data.allMarkdownRemark.edges[0].node
 
   return (
-    <Layout slug={fields.slug}>
+    <Layout slug={fields.slug} titlePrefix="About">
       <Grid container direction="column" wrap="nowrap" alignItems="center">
         <Grid className={classes.container} item>
           <Card>

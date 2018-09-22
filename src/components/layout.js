@@ -16,7 +16,7 @@ const styles = () => ({
   }
 })
 
-const Layout = ({ children, classes, slug }) => {
+const Layout = ({ children, classes, slug, titlePrefix }) => {
 
   const tabs = ['/', '/about/', '/contact/']
 
@@ -43,7 +43,7 @@ const Layout = ({ children, classes, slug }) => {
         <>
           <CssBaseline />
           <Helmet
-            title={data.site.siteMetadata.title}
+            title={`${titlePrefix ? `${titlePrefix} | ` : ''}${data.site.siteMetadata.title}`}
             meta={[
               { name: 'description', content: 'Sample' },
               { name: 'keywords', content: 'sample, something' },
@@ -69,6 +69,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
   slug: PropTypes.string,
+  titlePrefix: PropTypes.string,
 }
 
 export default withStyles(styles)(Layout)

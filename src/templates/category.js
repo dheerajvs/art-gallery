@@ -33,7 +33,7 @@ const Category = props => {
   const images = data.allFile.edges
 
   return (
-    <Layout>
+    <Layout titlePrefix={category}>
       <Typography
         className={classes.categoryTitle} align="center" variant="title"
         color="primary"

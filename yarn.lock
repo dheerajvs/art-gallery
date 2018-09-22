@@ -4888,6 +4888,14 @@ gatsby-link@^2.0.0-rc.4, gatsby-link@^2.0.1:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
+gatsby-plugin-manifest@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.2.tgz#a978228dc9c252812f8592d7fc51a92769b3f004"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    sharp "^0.20.2"
+
 gatsby-plugin-netlify-cms@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.2.tgz#5b65978cd3dc84e170c214d348e4c912f45b21b1"

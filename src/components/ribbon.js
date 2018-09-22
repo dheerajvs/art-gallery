@@ -14,6 +14,7 @@ const styles = () => ({
     zIndex: 1,
   },
   span: {
+    fontFamily: 'Roboto, sans-serif',
     fontSize: 10,
     fontWeight: 'bold',
     color: '#FFF',

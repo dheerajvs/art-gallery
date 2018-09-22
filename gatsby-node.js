@@ -43,7 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
     items.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`src/templates/item/item.js`),
+        component: path.resolve(`src/templates/item.js`),
         context: {
           id: node.id
         },

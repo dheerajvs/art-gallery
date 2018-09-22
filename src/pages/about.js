@@ -21,6 +21,7 @@ const styles = () => ({
   },
   container: {
     maxWidth: 1024,
+    marginBottom: 24,
   },
   testimonialCard: {
     maxWidth: 240,
@@ -43,7 +44,7 @@ const About = ({ classes, data }) => {
 
   return (
     <Layout slug={fields.slug}>
-      <Grid container direction="column" wrap="nowrap" alignItems="center" spacing={24}>
+      <Grid container direction="column" wrap="nowrap" alignItems="center">
         <Grid className={classes.container} item>
           <Card>
             <CardContent>

@@ -16,6 +16,31 @@ testimonials:
       for taking the time to execute the painting with ultimate perfection and
       passion.
     title: Shobha Srinivasan
+  - place: 'Doctor, Imphal'
+    quote: >-
+      As an art lover, I fall easily in love with paintings. But honestly, my
+      passion to learn painting was lit up the moment I saw Sowmya's paintings.
+      The brilliant colours in her paintings are simply amazing. I consider
+      myself extremely fortunate to have learnt the first strokes of my brush
+      under her guidance. Thank you Sowmya, you are my angel.
+    title: Dr. Matou
+  - place: Lecturer
+    quote: >-
+      Sowmya is an extremely talented and professional artist. Her passion for
+      art is clearly evident in her work. She is highly organized, detail
+      oriented and well versed in various painting and art styles including oil
+      paintings, water colors, murals, tanjore, kalamkari, miniatures, and
+      zentangles. Having been her student for long, I am fascinated with her way
+      of work and the end product. She is truly an inspiring artist.
+    title: Amrutha D
+  - place: 'Detroit, USA'
+    quote: >-
+      Bought Toy Seller oil painting from Sowmya. The painting is beautiful! The
+      Toy Seller lady in the painting looks real and alive. The color choices
+      are perfect. One of the best oil paintings that I have purchased for my
+      collection. She is a very talented artist. Would definitely recommend her
+      work.
+    title: Arjun Yetukuri
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

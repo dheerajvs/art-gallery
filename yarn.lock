@@ -3799,7 +3799,7 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
-emotion@^9.2.6:
+emotion@^9.2.10, emotion@^9.2.6:
   version "9.2.10"
   resolved "https://registry.yarnpkg.com/emotion/-/emotion-9.2.10.tgz#9ba8e33d3dff1352af03f92d761ac6889cb0c545"
   dependencies:

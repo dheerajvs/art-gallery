@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { navigate } from 'gatsby-link'
-import Avatar from '@material-ui/core/Avatar'
+import Img from 'gatsby-image'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -17,7 +17,8 @@ import Layout from 'components/layout'
 const styles = () => ({
   avatar: {
     width: 56,
-    height: 56
+    height: 56,
+    borderRadius: '50%',
   },
   container: {
     maxWidth: 1024,
@@ -44,6 +45,7 @@ function handleContactClick() {
 
 const About = ({ classes, data }) => {
   const { fields, frontmatter, html } = data.allMarkdownRemark.edges[0].node
+  const avatarFixed = data.file.childImageSharp.fixed;
 
   return (
     <Layout slug={fields.slug} titlePrefix="About">
@@ -53,9 +55,9 @@ const About = ({ classes, data }) => {
             <CardContent>
               <Grid container alignItems="center" spacing={16}>
                 <Grid item>
-                  <Avatar
+                  <Img
                     className={classes.avatar}
-                    src={frontmatter.avatar} alt={frontmatter.name}
+                    fixed={avatarFixed} alt={frontmatter.name}
                   />
                 </Grid>
                 <Grid item>
@@ -164,6 +166,14 @@ export const pageQuery = graphql`
             slug
           }
           html
+        }
+      }
+    }
+
+    file(relativePath: {eq: "sowmya.jpg"}){
+      childImageSharp {
+        fixed(width: 56, height: 56) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

@@ -52,7 +52,10 @@ const Category = props => {
                 { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
                 <Card>
                   <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
-                    <Img fluid={image.node.childImageSharp.fluid}/>
+                    <Img
+                      fluid={image.node.childImageSharp.fluid}
+                      alt={itemNode.frontmatter.title}
+                    />
                     <CardContent className={classes.cardContent}>
                       <Typography
                         className={classes.imageTitle}

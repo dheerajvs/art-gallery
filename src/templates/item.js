@@ -97,7 +97,7 @@ class Item extends React.Component {
 
   handleShareClick = event => {
     if (navigator.share) {
-      const { title } = this.this.props.data.markdownRemark.frontmatter
+      const { title } = this.props.data.markdownRemark.frontmatter
 
       navigator.share({
         title: 'Sowmya\u2019s Art Gallery',

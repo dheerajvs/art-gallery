@@ -34,7 +34,7 @@ module.exports = {
         name: `Sowmya\u2019s Art Gallery`,
         short_name: `Art Gallery`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#f3eae3`,
         theme_color: `#8b4513`,
         display: `standalone`,
         icon: `static/img/favicon.png`,

@@ -44,7 +44,7 @@ testimonials:
   - place: 'Sydney, Australia'
     quote: >-
       Recommended by a family friend, we approached Sowmya with the highest of
-      expectation. We were not disappointed. Her oil painting sits proudly as a
+      expectations. We were not disappointed. Her oil painting sits proudly as a
       focal piece in our living room, the finish and delivery cannot be faulted!
     title: Bryce & Shilpa Searle
 ---

@@ -125,7 +125,7 @@ const About = ({ classes, data }) => {
         >
           <Grid item>
             <Typography variant="caption">
-              Website handcrafted with &#x2764;&#xfe0f; by Dheeraj V S
+              Website handcrafted with &#x2764;&#xfe0f; by Dheeraj Vepakomma
             </Typography>
           </Grid>
           <Grid item>

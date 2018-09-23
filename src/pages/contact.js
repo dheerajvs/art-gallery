@@ -42,7 +42,7 @@ class Contact extends React.Component {
 
   componentDidMount() {
     if (typeof(window) !== 'undefined'
-      && window.location.hash === '#submit-message') {
+      && window.location.hash === '#submitted-message') {
       this.setState({ snackOpen: true })
     }
   }
@@ -59,7 +59,7 @@ class Contact extends React.Component {
           <Grid
             className={classes.container} item
             name="contact" component="form" method="POST"
-            data-netlify="true"
+            data-netlify="true" action="#submitted-message"
           >
             <Card>
               <CardContent>

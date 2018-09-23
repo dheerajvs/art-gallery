@@ -13,6 +13,8 @@ import withRoot from 'withRoot'
 import Layout from '../components/layout'
 import Ribbon from '../components/ribbon'
 
+const cardMediaHeight = 180
+
 const styles = () => ({
   ribbonContainer: {
     position: 'relative',
@@ -20,9 +22,17 @@ const styles = () => ({
   categoryTitle: {
     marginBottom: 16,
   },
+  cardContent: {
+    padding: '8px 16px',
+    '&:last-child': {
+      paddingBottom: 8
+    }
+  },
+  cardMedia: {
+    height: cardMediaHeight
+  },
   imageTitle: {
     whiteSpace: 'nowrap',
-    width: 118,
   },
 })
 
@@ -41,9 +51,9 @@ const Category = props => {
       </Typography>
       <Grid container justify="center" spacing={24}>{
         items.map(({ node: itemNode }) => {
-          const image = images.filter(({ node: { relativePath } }) =>
+          const { fixed } = images.filter(({ node: { relativePath } }) =>
             relativePath === itemNode.frontmatter.large_image.substring(5)
-          )[0]
+          )[0].node.childImageSharp
 
           return (
             <Grid key={itemNode.fields.slug} item>
@@ -52,10 +62,16 @@ const Category = props => {
                 <Card>
                   <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
                     <Img
-                      fluid={image.node.childImageSharp.fluid}
+                      className={classes.cardMedia}
+                      fixed={fixed}
                       alt={itemNode.frontmatter.title}
                     />
-                    <CardContent className={classes.cardContent}>
+                    <CardContent
+                      className={classes.cardContent}
+                      style={{
+                        width: fixed.aspectRatio * cardMediaHeight
+                      }}
+                    >
                       <Typography
                         className={classes.imageTitle}
                         align="center" noWrap variant="body1"
@@ -118,8 +134,9 @@ export const pageQuery = graphql`
         node {
           relativePath
           childImageSharp {
-            fluid(maxWidth: 512) {
-              ...GatsbyImageSharpFluid
+            fixed(height: 180) {
+              ...GatsbyImageSharpFixed
+              aspectRatio
             }
           }
         }

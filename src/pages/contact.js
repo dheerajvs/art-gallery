@@ -59,11 +59,12 @@ class Contact extends React.Component {
           <Grid
             className={classes.container} item
             name="contact" component="form" method="POST"
-            action="/submitted/" data-netlify="true"
+            data-netlify="true"
           >
             <Card>
               <CardContent>
                 <Typography variant="headline">Contact the Artist</Typography>
+                <input name="form-name" type="hidden" value="contact" />
                 <TextField
                   className={classes.textField} fullWidth margin="normal"
                   id="contact-name" label="Name" name="name" required

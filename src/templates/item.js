@@ -36,6 +36,7 @@ const styles = theme => ({
     boxShadow: '0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12)',
     maxWidth: '100%',
     maxHeight: 'calc(100vh - 116px)',
+    pointerEvents: 'none',
   },
   leftIcon: {
     marginRight: theme.spacing.unit,

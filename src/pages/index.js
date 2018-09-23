@@ -39,7 +39,8 @@ const styles = theme => ({
     }
   },
   cardMedia: {
-    height: cardMediaHeight
+    height: cardMediaHeight,
+    pointerEvents: 'none',
   },
   ribbonContainer: {
     position: 'relative',

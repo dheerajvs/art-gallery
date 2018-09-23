@@ -18,6 +18,7 @@ const styles = () => ({
     width: 56,
     height: 56,
     borderRadius: '50%',
+    pointerEvents: 'none',
   },
   container: {
     maxWidth: 1024,

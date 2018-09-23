@@ -29,7 +29,8 @@ const styles = () => ({
     }
   },
   cardMedia: {
-    height: cardMediaHeight
+    height: cardMediaHeight,
+    pointerEvents: 'none',
   },
   imageTitle: {
     whiteSpace: 'nowrap',

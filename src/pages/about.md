@@ -3,13 +3,13 @@ templateKey: about
 name: Sowmya B A
 avatar: /img/sowmya.jpg
 testimonials:
-  - place: 'Software Professional, Las Vegas'
+  - place: 'Software Professional, Las Vegas, USA'
     quote: >-
       Sowmya is a very talented and dedicated artist. I have her painting of
       Radha Krishna in Kalamkari style and it is just gorgeous. Her eye for
       detail and finesse is evident in all her paintings.
     title: Priya R
-  - place: Los Angeles
+  - place: 'Los Angeles, USA'
     quote: >-
       Sowmya is a truly outstanding artist I have come across. I'm overwhelmed
       with the stunning Tanjore painting that she had made for me. I thank her
@@ -24,7 +24,7 @@ testimonials:
       myself extremely fortunate to have learnt the first strokes of my brush
       under her guidance. Thank you Sowmya, you are my angel.
     title: Dr. Matou
-  - place: Lecturer
+  - place: 'Lecturer, Bangalore'
     quote: >-
       Sowmya is an extremely talented and professional artist. Her passion for
       art is clearly evident in her work. She is highly organized, detail
@@ -41,12 +41,18 @@ testimonials:
       collection. She is a very talented artist. Would definitely recommend her
       work.
     title: Arjun Yetukuri
+  - place: 'Sydney, Australia'
+    quote: >-
+      Recommended by a family friend, we approached Sowmya with the highest of
+      expectation. We were not disappointed. Her oil painting sits proudly as a
+      focal piece in our living room, the finish and delivery cannot be faulted!
+    title: Bryce & Shilpa Searle
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 
 She began her professional career in the IT industry, worked at a number of startups in engineering and business development positions and also founded a software company of her own. Despite a successful career, she found her true calling as a fine-arts painter.
 
-Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals and zentangles. She conducts workshops on kalamkari, fabric painting and zentangles. So far she has trained several hundred students.
+Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals and zentangles. So far she has trained several hundred students.
 
 ## Awards & Workshops
 

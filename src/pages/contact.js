@@ -35,11 +35,9 @@ const styles = theme => ({
 })
 
 class Contact extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      snackOpen: false
-    }
+
+  state = {
+    snackOpen: false
   }
 
   componentDidMount() {

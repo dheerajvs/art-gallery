@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import { navigate } from 'gatsby-link'
+import { graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
@@ -142,7 +141,10 @@ const About = ({ classes, data }) => {
 About.propTypes = {
   classes: PropTypes.object.isRequired,
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.object
+    allMarkdownRemark: PropTypes.object,
+    file: PropTypes.shape({
+      childImageSharp: PropTypes.object
+    }),
   }),
 }
 

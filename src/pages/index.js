@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, navigate } from 'gatsby'
+import Img from 'gatsby-image'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import { withStyles } from '@material-ui/core/styles'
@@ -13,6 +13,8 @@ import withRoot from 'withRoot'
 
 import Layout from 'components/layout'
 import Ribbon from 'components/ribbon'
+
+const cardMediaHeight = 180
 
 const styles = theme => ({
   root: {
@@ -37,14 +39,13 @@ const styles = theme => ({
     }
   },
   cardMedia: {
-    height: 150
+    height: cardMediaHeight
   },
   ribbonContainer: {
     position: 'relative',
   },
   title: {
     whiteSpace: 'nowrap',
-    width: 118
   },
 })
 
@@ -56,6 +57,7 @@ const IndexPage = ({ classes, data }) => {
   const items = edges.filter(
     ({ node }) => node.frontmatter.templateKey === 'item'
   )
+  const images = data.allFile.edges
 
   return (
     <Layout slug="/">
@@ -87,30 +89,43 @@ const IndexPage = ({ classes, data }) => {
                 itemNode.frontmatter.categories.find(({ category }) =>
                   category === categoryNode.frontmatter.title
                 )
-              )).map(({ node: itemNode }) => (
-                <Grid key={itemNode.fields.slug} item>
-                  <div className={classes.ribbonContainer}>
-                    { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
-                    <Card>
-                      <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
-                        <CardMedia
-                          className={classes.cardMedia}
-                          image={itemNode.frontmatter.image}
-                          title={itemNode.frontmatter.title}
-                        />
-                        <CardContent className={classes.cardContent}>
-                          <Typography
-                            className={classes.title}
-                            align="center" noWrap variant="body1"
+              )).map(({ node: itemNode }) => {
+                const { fixed } = images.filter(({ node: { relativePath } }) =>
+                  relativePath === itemNode.frontmatter.large_image.substring(5)
+                )[0].node.childImageSharp
+
+                return (
+                  <Grid key={itemNode.fields.slug} item>
+                    <div className={classes.ribbonContainer}>
+                      { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
+                      <Card>
+                        <CardActionArea
+                          onClick={() => navigate(itemNode.fields.slug)}
+                        >
+                          <Img
+                            className={classes.cardMedia}
+                            fixed={fixed}
+                            alt={itemNode.frontmatter.title}
+                          />
+                          <CardContent
+                            className={classes.cardContent}
+                            style={{
+                              width: fixed.aspectRatio * cardMediaHeight
+                            }}
                           >
-                            {itemNode.frontmatter.title}
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                    </Card>
-                  </div>
-                </Grid>
-              ))}
+                            <Typography
+                              className={classes.title}
+                              align="center" noWrap variant="body1"
+                            >
+                              {itemNode.frontmatter.title}
+                            </Typography>
+                          </CardContent>
+                        </CardActionArea>
+                      </Card>
+                    </div>
+                  </Grid>
+                )
+              })}
             </Grid>
           </Grid>
         ))}
@@ -141,11 +156,27 @@ export const pageQuery = graphql`
           frontmatter {
             templateKey
             title
-            image
+            large_image
             categories {
               category
             }
             sold
+          }
+        }
+      }
+    }
+
+    allFile(filter: {
+      extension: { eq: "jpg" }
+    }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            fixed(height: 180) {
+              ...GatsbyImageSharpFixed
+              aspectRatio
+            }
           }
         }
       }

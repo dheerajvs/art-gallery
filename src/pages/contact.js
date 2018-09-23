@@ -47,6 +47,10 @@ class Contact extends React.Component {
     }
   }
 
+  handleCloseSnack = () => {
+    this.setState({ snackOpen: false })
+  }
+
   render() {
     const { classes } = this.props
 

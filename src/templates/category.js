@@ -13,7 +13,7 @@ import withRoot from 'withRoot'
 import Layout from '../components/layout'
 import Ribbon from '../components/ribbon'
 
-const cardMediaHeight = 180
+const cardMediaHeight = 270
 
 const styles = () => ({
   ribbonContainer: {
@@ -135,7 +135,7 @@ export const pageQuery = graphql`
         node {
           relativePath
           childImageSharp {
-            fixed(height: 180) {
+            fixed(height: 270) {
               ...GatsbyImageSharpFixed
               aspectRatio
             }

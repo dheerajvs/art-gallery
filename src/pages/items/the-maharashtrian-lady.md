@@ -9,7 +9,6 @@ width: '20'
 height: '28'
 sold: true
 available: true
-image: /img/oil-01-s.jpg
 large_image: /img/oil-01-l.jpg
 categories:
   - category: Oil Paintings

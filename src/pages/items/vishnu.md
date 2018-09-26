@@ -7,7 +7,6 @@ width: '13'
 height: '17'
 sold: true
 available: true
-image: /img/tan-03-s.jpg
 large_image: /img/tan-03-l.jpg
 categories:
   - category: Tanjore Paintings

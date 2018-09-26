@@ -8,7 +8,6 @@ width: '17.5'
 height: '21.5'
 sold: false
 available: true
-image: /img/oil-05-s.jpg
 large_image: /img/oil-05-l.jpg
 categories:
   - category: Oil Paintings

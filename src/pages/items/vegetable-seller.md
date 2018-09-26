@@ -7,7 +7,6 @@ width: '20'
 height: '24'
 sold: true
 available: true
-image: /img/pcl-03-s.jpg
 large_image: /img/pcl-03-l.jpg
 categories:
   - category: Colour Pencil Sketches

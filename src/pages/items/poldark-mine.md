@@ -7,7 +7,6 @@ width: '16'
 height: '20'
 sold: false
 available: true
-image: /img/acr-02-s.jpg
 large_image: /img/acr-02-l.jpg
 categories:
   - category: Others

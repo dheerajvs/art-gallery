@@ -36,7 +36,6 @@ collections:
       - {label: "Height (inches)", name: "height", widget: "number"}
       - {label: "Sold out", name: "sold", widget: "boolean", default: false}
       - {label: "Available as commissioned work", name: "available", widget: "boolean", default: true}
-      - {label: "Image", name: "image", widget: "image"}
       - {label: "Large Image", name: "large_image", widget: "image"}
       - {label: "Categories", name: "categories", widget: "list", fields: [{label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title"}]}
 

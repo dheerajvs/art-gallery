@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -56,100 +57,102 @@ class Contact extends React.Component {
 
     return (
       <Layout slug={'/contact/'} titlePrefix="Contact">
-        <Grid
-          container direction="column" wrap="nowrap" alignItems="center"
-          spacing={24}
-        >
+        <PageTransition>
           <Grid
-            className={classes.container} item
-            name="contact" component="form" method="POST"
-            data-netlify="true" action="/contact/#submitted-message"
+            container direction="column" wrap="nowrap" alignItems="center"
+            spacing={24}
           >
-            <Card>
-              <CardContent>
-                <Typography variant="headline">Contact the Artist</Typography>
-                <input name="form-name" type="hidden" value="contact" />
-                <TextField
-                  className={classes.textField} fullWidth margin="normal"
-                  id="contact-name" label="Name" name="name" required
-                  autoComplete="name" type="text" variant="outlined"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <Person color="primary" />
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-                <TextField
-                  className={classes.textField} fullWidth margin="normal"
-                  id="contact-phone" label="Phone" name="phone" required
-                  autoComplete="tel" type="tel" variant="outlined"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <Phone color="primary" />
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-                <TextField
-                  className={classes.textField} fullWidth margin="normal"
-                  id="contact-email" label="Email" name="email"
-                  autoComplete="email" type="email" variant="outlined"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <Email color="primary" />
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-                <TextField
-                  className={classes.textField} fullWidth margin="normal"
-                  id="contact-message" label="Message" name="message" type="text"
-                  multiline rows={3} rowsMax={5} required variant="outlined"
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">
-                        <Message color="primary" />
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-              </CardContent>
-              <CardActions>
-                <Button color="primary" variant="raised" type="submit">
-                  Submit
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
+            <Grid
+              className={classes.container} item
+              name="contact" component="form" method="POST"
+              data-netlify="true" action="/contact/#submitted-message"
+            >
+              <Card>
+                <CardContent>
+                  <Typography variant="headline">Contact the Artist</Typography>
+                  <input name="form-name" type="hidden" value="contact" />
+                  <TextField
+                    className={classes.textField} fullWidth margin="normal"
+                    id="contact-name" label="Name" name="name" required
+                    autoComplete="name" type="text" variant="outlined"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <Person color="primary" />
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                  <TextField
+                    className={classes.textField} fullWidth margin="normal"
+                    id="contact-phone" label="Phone" name="phone" required
+                    autoComplete="tel" type="tel" variant="outlined"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <Phone color="primary" />
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                  <TextField
+                    className={classes.textField} fullWidth margin="normal"
+                    id="contact-email" label="Email" name="email"
+                    autoComplete="email" type="email" variant="outlined"
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <Email color="primary" />
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                  <TextField
+                    className={classes.textField} fullWidth margin="normal"
+                    id="contact-message" label="Message" name="message"
+                    multiline rows={3} rowsMax={5} required variant="outlined"
+                    type="text" InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <Message color="primary" />
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                </CardContent>
+                <CardActions>
+                  <Button color="primary" variant="raised" type="submit">
+                    Submit
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
 
-          <Snackbar
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            open={this.state.snackOpen}
-            onClose={this.handleCloseSnack}
-            ContentProps={{
-              'aria-describedby': 'message-id',
-            }}
-            message={<span id="message-id">Message submitted</span>}
-            action={[
-              <IconButton
-                key="close"
-                aria-label="Close"
-                color="inherit"
-                className={classes.close}
-                onClick={this.handleCloseSnack}
-              >
-                <CloseIcon />
-              </IconButton>,
-            ]}
-          />
-        </Grid>
+            <Snackbar
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              open={this.state.snackOpen}
+              onClose={this.handleCloseSnack}
+              ContentProps={{
+                'aria-describedby': 'message-id',
+              }}
+              message={<span id="message-id">Message submitted</span>}
+              action={[
+                <IconButton
+                  key="close"
+                  aria-label="Close"
+                  color="inherit"
+                  className={classes.close}
+                  onClick={this.handleCloseSnack}
+                >
+                  <CloseIcon />
+                </IconButton>,
+              ]}
+            />
+          </Grid>
+        </PageTransition>
       </Layout>
     )
   }

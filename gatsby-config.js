@@ -40,6 +40,7 @@ module.exports = {
         icon: `static/img/favicon.png`,
       },
     },
+    'gatsby-plugin-offline',
     // 'gatsby-plugin-netlify-cms',
     // 'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],

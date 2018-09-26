@@ -46,7 +46,7 @@ const Layout = ({ children, classes, slug }) => {
             defaultTitle={data.site.siteMetadata.title}
           >
             <html lang="en" />
-            <meta name="description" content="Sowmya\u2019s Art Gallery" />
+            <meta name="description" content="Oil paintings, Tanjore paintings, portraits and more." />
             <meta name="keywords" content="Sowmya B A, art, gallery, oil paintings, portraits, tanjore paintings, paintings" />
           </Helmet>
           <AppBar position="static">

@@ -28,7 +28,6 @@ module.exports = {
         plugins: [],
       },
     },
-    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

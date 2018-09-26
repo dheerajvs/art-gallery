@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
-import PageTransition from 'gatsby-plugin-page-transitions'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
@@ -45,53 +44,49 @@ const Category = props => {
 
   return (
     <Layout titlePrefix={category}>
-      <PageTransition>
-        <Typography
-          className={classes.categoryTitle} align="center" variant="title"
-          color="primary"
-        >
-          {category}
-        </Typography>
-        <Grid container justify="center" spacing={24}>{
-          items.map(({ node: itemNode }) => {
-            const { fixed } = images.filter(({ node: { relativePath } }) =>
-              relativePath === itemNode.frontmatter.large_image.substring(5)
-            )[0].node.childImageSharp
+      <Typography
+        className={classes.categoryTitle} align="center" variant="title"
+        color="primary"
+      >
+        {category}
+      </Typography>
+      <Grid container justify="center" spacing={24}>{
+        items.map(({ node: itemNode }) => {
+          const { fixed } = images.filter(({ node: { relativePath } }) =>
+            relativePath === itemNode.frontmatter.large_image.substring(5)
+          )[0].node.childImageSharp
 
-            return (
-              <Grid key={itemNode.fields.slug} item>
-                <div className={classes.ribbonContainer}>
-                  { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
-                  <Card>
-                    <CardActionArea
-                      onClick={() => navigate(itemNode.fields.slug)}
+          return (
+            <Grid key={itemNode.fields.slug} item>
+              <div className={classes.ribbonContainer}>
+                { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
+                <Card>
+                  <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
+                    <Img
+                      className={classes.cardMedia}
+                      fixed={fixed}
+                      alt={itemNode.frontmatter.title}
+                    />
+                    <CardContent
+                      className={classes.cardContent}
+                      style={{
+                        width: fixed.aspectRatio * cardMediaHeight
+                      }}
                     >
-                      <Img
-                        className={classes.cardMedia}
-                        fixed={fixed}
-                        alt={itemNode.frontmatter.title}
-                      />
-                      <CardContent
-                        className={classes.cardContent}
-                        style={{
-                          width: fixed.aspectRatio * cardMediaHeight
-                        }}
+                      <Typography
+                        className={classes.imageTitle}
+                        align="center" noWrap variant="body1"
                       >
-                        <Typography
-                          className={classes.imageTitle}
-                          align="center" noWrap variant="body1"
-                        >
-                          {itemNode.frontmatter.title}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
-                </div>
-              </Grid>
-            )
-          })
-        }</Grid>
-      </PageTransition>
+                        {itemNode.frontmatter.title}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </div>
+            </Grid>
+          )
+        })
+      }</Grid>
     </Layout>
   )
 }

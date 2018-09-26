@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { graphql, navigate } from 'gatsby'
-import PageTransition from 'gatsby-plugin-page-transitions'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
@@ -120,105 +119,105 @@ class Item extends React.Component {
 
     return (
       <Layout titlePrefix={item.title}>
-        <PageTransition>
-          <Grid container justify="center" spacing={32}>
-            <Grid item>
-              <img
-                className={classes.image} src={item.large_image} alt={item.title}
-              />
-            </Grid>
-            <Grid className={classes.cardContainer} item>
-              <Card>
-                <CardContent>
-                  <Typography variant="headline">{item.title}</Typography>
-                  <Typography variant="subheading" paragraph>
-                    {item.medium}
-                  </Typography>
-                  <Typography variant="body1" paragraph>
-                    {item.description}
-                  </Typography>
-                  <Typography variant="body1" paragraph>
-                    {`${item.width} \xD7 ${item.height} inches`}
-                    {` (${Math.round(item.width * 2.54)}`}
-                    {` \xD7 ${Math.round(item.height * 2.54)} cm)`}
-                  </Typography>
-                  {item.sold && (
-                    <Typography variant="body2" component="p">
-                      &#x1F3F7;&#xFE0F; {`Sold out ${item.available
-                          ? '(available as commissioned work)' : ''}`}
-                    </Typography>
-                  ) || (
-                    <Typography
-                      className={classes.available} variant="body2" component="p"
-                    >
-                      Available.
-                    </Typography>
-                  )}
-                </CardContent>
-                <CardActions>
-                  <Button
-                    size="small" color="primary" onClick={handleEnquireClick}
-                  >
-                    <HelpIcon
-                      className={classNames(classes.leftIcon, classes.iconSmall)}
-                    />
-                    Enquire
-                  </Button>
-                  <Button
-                    size="small" color="primary"
-                    onClick={this.handleShareClick}
-                    aria-owns={anchorEl ? 'share-menu' : null}
-                    aria-haspopup="true"
-                  >
-                    <ShareIcon
-                      className={classNames(classes.leftIcon, classes.iconSmall)}
-                    />
-                    Share
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
+        <Grid container justify="center" spacing={32}>
+          <Grid item>
+            <img
+              className={classes.image} src={item.large_image} alt={item.title}
+            />
           </Grid>
-          <Menu
-            id="share-menu"
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={this.handleShareMenuClose}
-          >
-            <MenuItem onClick={() => this.handleShareMenuClose('facebook')}>
-              <ListItemIcon
-                className={classNames(classes.iconSmall, classes.facebook)}
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </ListItemIcon>
-              Facebook
-            </MenuItem>
-            <MenuItem onClick={() => this.handleShareMenuClose('twitter')}>
-              <ListItemIcon
-                className={classNames(classes.iconSmall, classes.twitter)}
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </ListItemIcon>
-              Twitter
-            </MenuItem>
-            <MenuItem onClick={() => this.handleShareMenuClose('whatsapp')}>
-              <ListItemIcon
-                className={classNames(classes.iconSmall, classes.whatsapp)}
-              >
-                <FontAwesomeIcon icon={faWhatsapp} color="green" />
-              </ListItemIcon>
-              WhatsApp
-            </MenuItem>
-            <MenuItem onClick={() => this.handleShareMenuClose('email')}>
-              <ListItemIcon
-                className={classNames(classes.iconSmall, classes.email)}
-              >
-                <EmailIcon />
-              </ListItemIcon>
-              Email
-            </MenuItem>
-          </Menu>
-        </PageTransition>
+          <Grid className={classes.cardContainer} item>
+            <Card>
+              <CardContent>
+                <Typography variant="headline">{item.title}</Typography>
+                <Typography variant="subheading" paragraph>
+                  {item.medium}
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  {item.description}
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  {`${item.width} \xD7 ${item.height} inches`}
+                  {` (${Math.round(item.width * 2.54)}`}
+                  {` \xD7 ${Math.round(item.height * 2.54)} cm)`}
+                </Typography>
+                {item.sold && (
+                  <Typography variant="body2" component="p">
+                    &#x1F3F7;&#xFE0F; {
+                      `Sold out ${
+                        item.available ? '(available as commissioned work)' : ''
+                    }`
+                  }</Typography>
+                ) || (
+                  <Typography
+                    className={classes.available} variant="body2" component="p"
+                  >
+                    Available.
+                  </Typography>
+                )}
+              </CardContent>
+              <CardActions>
+                <Button
+                  size="small" color="primary" onClick={handleEnquireClick}
+                >
+                  <HelpIcon
+                    className={classNames(classes.leftIcon, classes.iconSmall)}
+                  />
+                  Enquire
+                </Button>
+                <Button
+                  size="small" color="primary"
+                  onClick={this.handleShareClick}
+                  aria-owns={anchorEl ? 'share-menu' : null}
+                  aria-haspopup="true"
+                >
+                  <ShareIcon
+                    className={classNames(classes.leftIcon, classes.iconSmall)}
+                  />
+                  Share
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
+        <Menu
+          id="share-menu"
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={this.handleShareMenuClose}
+        >
+          <MenuItem onClick={() => this.handleShareMenuClose('facebook')}>
+            <ListItemIcon
+              className={classNames(classes.iconSmall, classes.facebook)}
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </ListItemIcon>
+            Facebook
+          </MenuItem>
+          <MenuItem onClick={() => this.handleShareMenuClose('twitter')}>
+            <ListItemIcon
+              className={classNames(classes.iconSmall, classes.twitter)}
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </ListItemIcon>
+            Twitter
+          </MenuItem>
+          <MenuItem onClick={() => this.handleShareMenuClose('whatsapp')}>
+            <ListItemIcon
+              className={classNames(classes.iconSmall, classes.whatsapp)}
+            >
+              <FontAwesomeIcon icon={faWhatsapp} color="green" />
+            </ListItemIcon>
+            WhatsApp
+          </MenuItem>
+          <MenuItem onClick={() => this.handleShareMenuClose('email')}>
+            <ListItemIcon
+              className={classNames(classes.iconSmall, classes.email)}
+            >
+              <EmailIcon />
+            </ListItemIcon>
+            Email
+          </MenuItem>
+        </Menu>
       </Layout>
     )
   }

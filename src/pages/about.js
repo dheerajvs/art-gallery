@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
@@ -48,7 +49,12 @@ const About = ({ classes, data }) => {
   const avatarFixed = data.file.childImageSharp.fixed;
 
   return (
-    <Layout slug={fields.slug} titlePrefix="About">
+    <Layout slug={fields.slug}>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="About Sowmya, the artist" />
+      </Helmet>
+
       <Grid container direction="column" wrap="nowrap" alignItems="center">
         <Grid className={classes.container} item>
           <Card>

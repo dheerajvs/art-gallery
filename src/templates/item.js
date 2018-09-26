@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { graphql, navigate } from 'gatsby'
@@ -118,7 +119,11 @@ class Item extends React.Component {
     const { anchorEl } = this.state
 
     return (
-      <Layout titlePrefix={item.title}>
+      <Layout>
+        <Helmet>
+          <title>{item.title}</title>
+          <meta name="description" content={item.title} />
+        </Helmet>
         <Grid container justify="center" spacing={32}>
           <Grid item>
             <img

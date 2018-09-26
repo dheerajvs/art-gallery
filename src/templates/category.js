@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { graphql, navigate } from 'gatsby'
 import Img from 'gatsby-image'
@@ -43,7 +44,11 @@ const Category = props => {
   const images = data.allFile.edges
 
   return (
-    <Layout titlePrefix={category}>
+    <Layout>
+      <Helmet>
+        <title>{category}</title>
+        <meta name="description" content={category} />
+      </Helmet>
       <Typography
         className={classes.categoryTitle} align="center" variant="title"
         color="primary"

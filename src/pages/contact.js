@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
@@ -55,7 +56,11 @@ class Contact extends React.Component {
     const { classes } = this.props
 
     return (
-      <Layout slug={'/contact/'} titlePrefix="Contact">
+      <Layout slug={'/contact/'}>
+        <Helmet>
+          <title>Contact</title>
+          <meta name="description" content="Contact the artist" />
+        </Helmet>
         <Grid
           container direction="column" wrap="nowrap" alignItems="center"
           spacing={24}

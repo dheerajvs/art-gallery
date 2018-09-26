@@ -15,7 +15,7 @@ const styles = () => ({
   }
 })
 
-const Layout = ({ children, classes, slug, titlePrefix }) => {
+const Layout = ({ children, classes, slug }) => {
 
   const tabs = ['/', '/about/', '/contact/']
 
@@ -42,12 +42,13 @@ const Layout = ({ children, classes, slug, titlePrefix }) => {
         <>
           <CssBaseline />
           <Helmet
-            title={`${titlePrefix ? `${titlePrefix} | ` : ''}${data.site.siteMetadata.title}`}
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          />
+            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            defaultTitle={data.site.siteMetadata.title}
+          >
+            <html lang="en" />
+            <meta name="description" content="Sowmya\u2019s Art Gallery" />
+            <meta name="keywords" content="Sowmya B A, art, gallery, oil paintings, portraits, tanjore paintings, paintings" />
+          </Helmet>
           <AppBar position="static">
             <Tabs value={Math.max(0, getTabValue())} onChange={onTabChange}>
               <Tab label="Gallery"/>
@@ -68,7 +69,6 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
   slug: PropTypes.string,
-  titlePrefix: PropTypes.string,
 }
 
 export default withStyles(styles)(Layout)

@@ -51,6 +51,7 @@ const styles = theme => ({
 })
 
 const IndexPage = ({ classes, data }) => {
+  const images = data.allFile.edges
   const { edges } = data.allMarkdownRemark
   const categories = edges.filter(
     ({ node }) => node.frontmatter.templateKey === 'category'
@@ -58,7 +59,11 @@ const IndexPage = ({ classes, data }) => {
   const items = edges.filter(
     ({ node }) => node.frontmatter.templateKey === 'item'
   )
-  const images = data.allFile.edges
+  const home = edges.filter(
+    ({ node }) => node.frontmatter.templateKey === 'home'
+  )[0].node.frontmatter.categories.map(({ category }) =>
+    categories.filter(({ node }) => node.frontmatter.title === category)[0]
+  )
 
   return (
     <Layout slug="/">
@@ -66,7 +71,7 @@ const IndexPage = ({ classes, data }) => {
         className={classes.root}
         container direction="column" wrap="nowrap" spacing={16}
       >
-        {categories.map(({ node: categoryNode }) => (
+        {home.map(({ node: categoryNode }) => (
           <Grid
             key={categoryNode.fields.slug}
             item xs={12}

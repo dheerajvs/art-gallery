@@ -112,6 +112,7 @@ const IndexPage = ({ classes, data }) => {
                             className={classes.cardMedia}
                             fixed={fixed}
                             alt={itemNode.frontmatter.title}
+                            title={itemNode.frontmatter.title}
                           />
                           <CardContent
                             className={classes.cardContent}
@@ -122,6 +123,7 @@ const IndexPage = ({ classes, data }) => {
                             <Typography
                               className={classes.title}
                               align="center" noWrap variant="body1"
+                              title={itemNode.frontmatter.title}
                             >
                               {itemNode.frontmatter.title}
                             </Typography>

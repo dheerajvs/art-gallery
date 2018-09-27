@@ -71,7 +71,8 @@ const Category = props => {
                       className={classes.cardMedia}
                       fixed={fixed}
                       alt={itemNode.frontmatter.title}
-                    />
+                      title={itemNode.frontmatter.title}
+                      />
                     <CardContent
                       className={classes.cardContent}
                       style={{
@@ -81,7 +82,8 @@ const Category = props => {
                       <Typography
                         className={classes.imageTitle}
                         align="center" noWrap variant="body1"
-                      >
+                        title={itemNode.frontmatter.title}
+                        >
                         {itemNode.frontmatter.title}
                       </Typography>
                     </CardContent>

@@ -23,6 +23,9 @@ const styles = () => ({
   categoryTitle: {
     marginBottom: 16,
   },
+  cardActionArea: {
+    lineHeight: 0,
+  },
   cardContent: {
     padding: '8px 16px',
     '&:last-child': {
@@ -66,7 +69,10 @@ const Category = props => {
               <div className={classes.ribbonContainer}>
                 { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
                 <Card>
-                  <CardActionArea onClick={() => navigate(itemNode.fields.slug)}>
+                  <CardActionArea
+                    className={classes.cardActionArea}
+                    onClick={() => navigate(itemNode.fields.slug)}
+                  >
                     <Img
                       className={classes.cardMedia}
                       fixed={fixed}

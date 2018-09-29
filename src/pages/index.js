@@ -42,6 +42,9 @@ const styles = theme => ({
     height: cardMediaHeight,
     pointerEvents: 'none',
   },
+  cardActionArea: {
+    lineHeight: 0,
+  },
   ribbonContainer: {
     position: 'relative',
   },
@@ -106,6 +109,7 @@ const IndexPage = ({ classes, data }) => {
                       { itemNode.frontmatter.sold && <Ribbon>Sold Out</Ribbon> }
                       <Card>
                         <CardActionArea
+                          className={classes.cardActionArea}
                           onClick={() => navigate(itemNode.fields.slug)}
                         >
                           <Img

@@ -73,6 +73,7 @@ class Item extends React.Component {
     const { title } = this.props.data.markdownRemark.frontmatter
     const text = `Take a look at ${title} from Sowmya\u2019s Art Gallery`
 
+    console.log('handleShareMenuClose: app', app)
     this.setState({ anchorEl: null })
 
     switch (app) {
@@ -110,6 +111,7 @@ class Item extends React.Component {
     }
     else {
       this.setState({ anchorEl: event.currentTarget })
+      console.log('event.currentTarget', event.currentTarget);
     }
   }
 
@@ -117,6 +119,7 @@ class Item extends React.Component {
     const { classes, data } = this.props
     const { frontmatter: item } = data.markdownRemark
     const { anchorEl } = this.state
+    console.log('render: anchorEl:', anchorEl);
 
     return (
       <Layout>
@@ -188,7 +191,7 @@ class Item extends React.Component {
           id="share-menu"
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
-          onClose={this.handleShareMenuClose}
+          onClose={() => this.handleShareMenuClose()}
         >
           <MenuItem onClick={() => this.handleShareMenuClose('facebook')}>
             <ListItemIcon

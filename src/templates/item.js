@@ -73,7 +73,6 @@ class Item extends React.Component {
     const { title } = this.props.data.markdownRemark.frontmatter
     const text = `Take a look at ${title} from Sowmya\u2019s Art Gallery`
 
-    console.log('handleShareMenuClose: app', app)
     this.setState({ anchorEl: null })
 
     switch (app) {
@@ -111,15 +110,15 @@ class Item extends React.Component {
     }
     else {
       this.setState({ anchorEl: event.currentTarget })
-      console.log('event.currentTarget', event.currentTarget);
     }
   }
+
+  isMobile = navigator && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
   render() {
     const { classes, data } = this.props
     const { frontmatter: item } = data.markdownRemark
     const { anchorEl } = this.state
-    console.log('render: anchorEl:', anchorEl);
 
     return (
       <Layout>
@@ -209,14 +208,16 @@ class Item extends React.Component {
             </ListItemIcon>
             Twitter
           </MenuItem>
-          <MenuItem onClick={() => this.handleShareMenuClose('whatsapp')}>
-            <ListItemIcon
-              className={classNames(classes.iconSmall, classes.whatsapp)}
-            >
-              <FontAwesomeIcon icon={faWhatsapp} color="green" />
-            </ListItemIcon>
-            WhatsApp
-          </MenuItem>
+          { this.isMobile && (
+            <MenuItem onClick={() => this.handleShareMenuClose('whatsapp')}>
+              <ListItemIcon
+                className={classNames(classes.iconSmall, classes.whatsapp)}
+              >
+                <FontAwesomeIcon icon={faWhatsapp} color="green" />
+              </ListItemIcon>
+              WhatsApp
+            </MenuItem>
+          )}
           <MenuItem onClick={() => this.handleShareMenuClose('email')}>
             <ListItemIcon
               className={classNames(classes.iconSmall, classes.email)}

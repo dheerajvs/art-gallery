@@ -113,7 +113,7 @@ class Item extends React.Component {
     }
   }
 
-  isMobile = navigator && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  isMobile = typeof navigator !== 'undefined' && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
   render() {
     const { classes, data } = this.props

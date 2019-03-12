@@ -47,13 +47,13 @@ testimonials:
       expectations. We were not disappointed. Her oil painting sits proudly as a
       focal piece in our living room, the finish and delivery cannot be faulted!
     title: Bryce & Shilpa Searle
-  - place: 'Freelance fashion designer, Bangalore'
+  - place: 'Fashion designer and Silk merchant, Bangalore'
     quote: >-
       Sowmya is an incredible artist. Her attention to detail is very
       impressive. She is one of those artists who will help your imagination
       come to life. She understands your needs with patience. Would highly
       recommend her if you want to get the right art done.
-    title: Nagendra and Geetha Nagendra
+    title: Geetha and Nagendra
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

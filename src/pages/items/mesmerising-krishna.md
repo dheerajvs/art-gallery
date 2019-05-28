@@ -8,9 +8,9 @@ description: >-
   myriad shades of coffee is evident in this painting.
 width: '10'
 height: '10'
-sold: false
+sold: true
 available: true
-large_image: /img/mesmerising-krishna-800.jpg
+large_image: /img/mesmerising-krishna-10x10-800.jpg
 categories:
   - category: Others
 ---

@@ -136,7 +136,7 @@ const About = ({ classes, data }) => {
           </Grid>
           <Grid item>
             <Typography variant="caption">
-              Copyright &copy; 2018, Sowmya B A. All rights reserved.
+              Copyright &copy; 2019, Sowmya B A. All rights reserved.
             </Typography>
           </Grid>
         </Grid>

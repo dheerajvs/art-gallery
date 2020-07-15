@@ -54,6 +54,16 @@ testimonials:
       come to life. She understands your needs with patience. Would highly
       recommend her if you want to get the right art done.
     title: Geetha and Nagendra
+  - place: 'Jakarta, Indonesia'
+    quote: >-
+      Sowmya is a wonderful artist. Her works are very neat and the finishing is
+      very good. In all her paintings, the eyes are expressive. The best part
+      about Sowmya is that she tries different kinds of art and she is very good
+      in everything. Her latest is Tanjore paintings which she does
+      effortlessly. She is also a great teacher. I learnt Zentangles, Kalamkari,
+      Kerala murals and oil painting from her. I appreciate Sowmya's dedication
+      to art and wish her the best in her journey.
+    title: Shanthi Seshadri
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

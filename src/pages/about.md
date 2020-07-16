@@ -64,6 +64,14 @@ testimonials:
       Kerala murals and oil painting from her. I appreciate Sowmya's dedication
       to art and wish her the best in her journey.
     title: Shanthi Seshadri
+  - place: 'Doctor, Bangalore'
+    quote: >-
+      Exquisite, passionate and an excellent painter are few words that
+      describes Sowmya and her paintings and we are extremely pleased with the
+      high quality of workmanship. We own a coffee painting of Lord Krishna and
+      a couple of pot paintings for our indoor garden decor and we just love
+      them.
+    title: Dr. Nandini
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

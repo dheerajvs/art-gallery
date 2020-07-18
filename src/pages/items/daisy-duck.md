@@ -1,10 +1,8 @@
 ---
 templateKey: item
 title: Daisy Duck
-medium: Mixed Media
-description: >-
-  Daisy Duck uniquely crafted with multiple plastic pots and adorned with a
-  pearl necklace
+medium: Mixed media on plastic pots
+description: Daisy Duck uniquely crafted will glam up your home
 width: '18'
 height: '24'
 sold: true

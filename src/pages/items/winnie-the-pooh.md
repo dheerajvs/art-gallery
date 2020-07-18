@@ -1,7 +1,7 @@
 ---
 templateKey: item
 title: Winnie the Pooh
-medium: Chalk Paints
+medium: Chalk Paint
 description: Disney Pot Collection
 width: '4.5'
 height: '4.7'

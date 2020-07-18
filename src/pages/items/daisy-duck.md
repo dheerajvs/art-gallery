@@ -2,7 +2,7 @@
 templateKey: item
 title: Daisy Duck
 medium: Mixed media on plastic pots
-description: Daisy Duck uniquely crafted will glam up your home
+description: Daisy Duck uniquely crafted duck to will glam up your home
 width: '18'
 height: '24'
 sold: true

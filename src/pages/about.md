@@ -51,10 +51,10 @@ testimonials:
     quote: >-
       Sowmya is an incredible artist. Her attention to detail is very
       impressive. She is one of those artists who will help your imagination
-      come to life. She understands your needs with patience. We got done
-      tanjore paintings with antique finish done for our pooja room, a main
-      panel of Lord Venkateshwara and 2 side panels each comprising of of
-      goddess Lakshmi, Lord Ganesha, goddess Saraswathi and another of Lord
+      come to life. She understands your needs with patience. We got tanjore
+      paintings with antique finish done for our pooja room, a main panel of
+      Lord Venkateshwara and 2 side panels each comprising of of goddess
+      Lakshmi, Lord Ganesha, goddess Saraswathi and another of Lord
       Satyanarayana Swamy, Lord Shiva with goddess Parvathi and goddess Kannika
       Parameshwari. Would highly recommend her if you want to get the right art
       done.

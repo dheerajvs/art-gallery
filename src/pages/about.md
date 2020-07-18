@@ -12,9 +12,9 @@ testimonials:
   - place: 'Los Angeles, USA'
     quote: >-
       Sowmya is a truly outstanding artist I have come across. I'm overwhelmed
-      with the stunning Tanjore painting that she had made for me. I thank her
-      for taking the time to execute the painting with ultimate perfection and
-      passion.
+      with the stunning Tanjore painting of Lord Vishnu that she has made for
+      me. I thank her for taking the time to execute the painting with ultimate
+      perfection and passion.
     title: Shobha Srinivasan
   - place: 'Doctor, Imphal'
     quote: >-

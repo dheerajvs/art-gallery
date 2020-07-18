@@ -1,8 +1,8 @@
 ---
 templateKey: item
 title: Minnie Mouse
-medium: Mixed Media
-description: ' '
+medium: Mixed media on plastic pots
+description: ' This cheerful Minnie Mouse is sure to liven up your home'
 width: '18'
 height: '30'
 sold: true

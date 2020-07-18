@@ -77,6 +77,15 @@ testimonials:
       a couple of pot paintings for our indoor garden decor and we just love
       them.
     title: Dr. Nandini
+  - place: 'Engineer, Bangalore, India'
+    quote: >-
+      We own a miniature Buddha oil painting from Sowmya. Wow! It's just
+      beautiful and we loved the style and detailing of the painting. We also
+      got a couple of pot paintings for my daughter's room the Minnie Mouse and
+      the Daisy Duck, she just loves them. Wonderful creativity, it's a joy to
+      view her paintings and it's really hard to select a favorite. We love all
+      her works and intend to get some more done for our home. Thank you Sowmya!
+    title: Likith Kumar
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

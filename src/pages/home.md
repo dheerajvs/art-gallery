@@ -6,7 +6,7 @@ categories:
   - category: Colour Pencil Sketches
   - category: Kalamkari
   - category: Pot Paintings
-  - category: Others
   - category: Brick Paintings
+  - category: Others
 ---
 

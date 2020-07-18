@@ -16,7 +16,7 @@ testimonials:
       me. I thank her for taking the time to execute the painting with ultimate
       perfection and passion.
     title: Shobha Srinivasan
-  - place: 'Doctor, Imphal'
+  - place: 'Doctor, Imphal, India'
     quote: >-
       As an art lover, I fall easily in love with paintings. But honestly, my
       passion to learn painting was lit up the moment I saw Sowmya's paintings.
@@ -24,7 +24,7 @@ testimonials:
       myself extremely fortunate to have learnt the first strokes of my brush
       under her guidance. Thank you Sowmya, you are my angel.
     title: Dr. Matou
-  - place: 'Lecturer, Bangalore'
+  - place: 'Lecturer, Bangalore, India'
     quote: >-
       Sowmya is an extremely talented and professional artist. Her passion for
       art is clearly evident in her work. She is highly organized, detail
@@ -51,20 +51,25 @@ testimonials:
     quote: >-
       Sowmya is an incredible artist. Her attention to detail is very
       impressive. She is one of those artists who will help your imagination
-      come to life. She understands your needs with patience. Would highly
-      recommend her if you want to get the right art done.
+      come to life. She understands your needs with patience. We got done
+      tanjore paintings with antique finish done for our pooja room, a main
+      panel of Lord Venkateshwara and 2 side panels each comprising of of
+      goddess Lakshmi, Lord Ganesha, goddess Saraswathi and another of Lord
+      Satyanarayana Swamy, Lord Shiva with goddess Parvathi and goddess Kannika
+      Parameshwari. Would highly recommend her if you want to get the right art
+      done.
     title: Geetha and Nagendra
   - place: 'Jakarta, Indonesia'
     quote: >-
       Sowmya is a wonderful artist. Her works are very neat and the finishing is
       very good. In all her paintings, the eyes are expressive. The best part
-      about Sowmya is that she tries different kinds of art and she is very good
-      in everything. Her latest is Tanjore paintings which she does
-      effortlessly. She is also a great teacher. I learnt Zentangles, Kalamkari,
+      about Sowmya is that she tries different kinds of art forms and she is
+      very good in everything. Her latest is Tanjore paintings, which she does
+      effortlessly. She is also a great teacher. I learnt zentangles, Kalamkari,
       Kerala murals and oil painting from her. I appreciate Sowmya's dedication
       to art and wish her the best in her journey.
     title: Shanthi Seshadri
-  - place: 'Doctor, Bangalore'
+  - place: 'Doctor, Bangalore, India'
     quote: >-
       Exquisite, passionate and an excellent painter are few words that
       describes Sowmya and her paintings and we are extremely pleased with the

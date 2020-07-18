@@ -82,7 +82,7 @@ Born and brought up in Bangalore, Sowmya had always shown precocious talent in t
 
 She began her professional career in the IT industry, worked at a number of startups in engineering and business development positions and also founded a software company of her own. Despite a successful career, she found her true calling as a fine-arts painter.
 
-Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals and zentangles. So far she has trained several hundred students.
+Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals,  zentangles and other painting forms. So far she has trained several hundred students.
 
 ## Awards & Workshops
 

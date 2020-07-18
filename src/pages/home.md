@@ -7,5 +7,6 @@ categories:
   - category: Kalamkari
   - category: Pot Paintings
   - category: Others
+  - category: Brick Paintings
 ---
 

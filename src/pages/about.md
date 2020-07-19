@@ -16,7 +16,7 @@ testimonials:
       me. I thank her for taking the time to execute the painting with ultimate
       perfection and passion.
     title: Shobha Srinivasan
-  - place: 'Doctor, Imphal, India'
+  - place: 'Doctor, Imphal'
     quote: >-
       As an art lover, I fall easily in love with paintings. But honestly, my
       passion to learn painting was lit up the moment I saw Sowmya's paintings.
@@ -24,7 +24,7 @@ testimonials:
       myself extremely fortunate to have learnt the first strokes of my brush
       under her guidance. Thank you Sowmya, you are my angel.
     title: Dr. Matou
-  - place: 'Lecturer, Bangalore, India'
+  - place: 'Lecturer, Bangalore'
     quote: >-
       Sowmya is an extremely talented and professional artist. Her passion for
       art is clearly evident in her work. She is highly organized, detail
@@ -69,23 +69,14 @@ testimonials:
       Kerala murals and oil painting from her. I appreciate Sowmya's dedication
       to art and wish her the best in her journey.
     title: Shanthi Seshadri
-  - place: 'Doctor, Bangalore, India'
+  - place: 'Bangalore, India'
     quote: >-
       Exquisite, passionate and an excellent painter are few words that
       describes Sowmya and her paintings and we are extremely pleased with the
       high quality of workmanship. We own a coffee painting of Lord Krishna and
       a couple of pot paintings for our indoor garden decor and we just love
       them.
-    title: Dr. Nandini
-  - place: 'Engineer, Bangalore, India'
-    quote: >-
-      We own a miniature Buddha oil painting from Sowmya. Wow! It's just
-      beautiful and we loved the style and detailing of the painting. We also
-      got a couple of pot paintings for my daughter's room the Minnie Mouse and
-      the Daisy Duck, she just loves them. Wonderful creativity, it's a joy to
-      view her paintings and it's really hard to select a favorite. We love all
-      her works and intend to get some more done for our home. Thank you Sowmya!
-    title: Likith Kumar
+    title: Dr. Nandini & Likhith
 ---
 Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
 

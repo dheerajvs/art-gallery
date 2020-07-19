@@ -2,7 +2,7 @@
 templateKey: item
 title: 3 Storey Building
 medium: Mixed media on brick
-description: Adding beauty to your home decor
+description: This unique painting of a building on brick adds beauty to your home decor.
 width: '4'
 height: '8.5'
 sold: false

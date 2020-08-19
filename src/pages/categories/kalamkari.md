@@ -1,5 +1,0 @@
----
-templateKey: category
-title: Kalamkari
----
-

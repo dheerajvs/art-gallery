@@ -5,6 +5,8 @@ medium: Mixed media on plastic pots
 description: >-
   Exquisitely crafted models of royal guards, complete with top hat, epaulettes,
   crafted belt, hands that hold a staff and decorated with golden lace.
+
+  https://youtu.be/baHMX30ptHo
 width: '10'
 height: '40'
 sold: true

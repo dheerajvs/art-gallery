@@ -1,6 +1,6 @@
 ---
 templateKey: about
-name: Sowmya B A
+name: Sowmya B. A.
 avatar: /img/sowmya.jpg
 testimonials:
   - place: 'Software Professional, Las Vegas, USA'
@@ -78,11 +78,13 @@ testimonials:
       them.
     title: Dr. Nandini & Likhith
 ---
-Born and brought up in Bangalore, Sowmya had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of ten and has never stopped learning.
+Sowmya hails from Bangalore, India. She had always shown precocious talent in the fields of art and athletics. She forayed into fine-arts at the age of eight and has never stopped learning.
 
-She began her professional career in the IT industry, worked at a number of startups in engineering and business development positions and also founded a software company of her own. Despite a successful career, she found her true calling as a fine-arts painter.
+She began her professional career in the IT industry, worked at a number of startups and MNC's in engineering and business development positions and also founded a software company of her own. Despite a successful career, she found her true calling as a fine-arts painter.
 
-Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals,  zentangles and other painting forms. So far she has trained several hundred students.
+Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals,  zentangles, pot paintings, brick paintings, coffee paintings and many more painting forms. So far she has trained several hundred students.
+
+Checkout [Sowmya's YouTube Channel](https://www.youtube.com/channel/UC1L-9XZlAlV4x-Y7d9r_wNg) 
 
 ## Awards & Workshops
 

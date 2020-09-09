@@ -6,7 +6,7 @@ categories:
   - category: Colour Pencil Sketches
   - category: Pot Paintings
   - category: Brick Paintings
-  - category: Others
   - category: Stone Art
+  - category: Others
 ---
 

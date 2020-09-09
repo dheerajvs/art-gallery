@@ -7,5 +7,6 @@ categories:
   - category: Pot Paintings
   - category: Brick Paintings
   - category: Others
+  - category: Stone Art
 ---
 

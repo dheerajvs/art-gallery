@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Yellow Cupcake Candle
+title: Cupcake Candle
 medium: Wax
 description: >-
   This delicious looking candle shaped like a cupcake is sure to delight

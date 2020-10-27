@@ -1,8 +1,10 @@
 ---
 templateKey: item
-title: Tea-light Candle on a CD
+title: Tea Light Candle on a CD
 medium: Wax
-description: A tea-light candle placed on a CD decorated with pearls.
+description: >-
+  A tea-light candle hand painted and placed on a CD decorated with glitters and
+  pearls. This candle with the decorative holder weighs about 35gms.
 width: '4.75'
 height: '0.5'
 sold: false

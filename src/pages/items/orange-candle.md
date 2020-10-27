@@ -2,7 +2,9 @@
 templateKey: item
 title: Orange Candle
 medium: Wax
-description: This candle looks and smells like a real orange!
+description: >-
+  Cut Orange aromatic candle is made of wax with the fragrance of real orange.
+  This candle weighs about 125gms.
 width: '3.25'
 height: '1.25'
 sold: false

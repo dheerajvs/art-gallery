@@ -1,9 +1,9 @@
 ---
 templateKey: item
-title: Heart-shaped Candle
+title: Heart Shaped Candle
 medium: Wax
 description: >-
-  Heart-shaped aromatic candle is made of wax with Rose fragrance. This candle
+  Heart shaped aromatic candle is made of wax with Rose fragrance. This candle
   weighs about 30gms.
 width: '2.36'
 height: '0.79'

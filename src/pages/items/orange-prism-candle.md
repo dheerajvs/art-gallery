@@ -2,7 +2,9 @@
 templateKey: item
 title: Orange Prism Candle
 medium: Wax
-description: This bright orange candle shaped like a prism is a delight to look at!
+description: >-
+  Orange Prism aromatic candle is made of wax with the fragrance of real
+  Orange.  This candle weighs about 60gms.
 width: '2'
 height: '2'
 sold: false

@@ -3,8 +3,8 @@ templateKey: item
 title: Red Velvet Cupcake Candle
 medium: Wax
 description: >-
-  This delicious looking candle shaped like a cupcake is sure to delight
-  everyone.
+  This delicious looking Red Velvet Cupcake aromatic candle is sure to delight
+  everyone with its Rosemary fragrance. This candle weighs about 90gms.
 width: '2.5'
 height: '2.5'
 sold: false

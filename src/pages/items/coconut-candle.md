@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Coconut Candle ₹ 200.00
+title: Coconut  ₹ 200.00
 medium: Wax in Coconut Shell
 description: >-
   Cut Coconut shaped candle is made of wax in coconut shell and coconut oil.

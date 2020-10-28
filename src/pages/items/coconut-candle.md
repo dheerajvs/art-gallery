@@ -7,7 +7,8 @@ description: >-
   This candle has coconut fragrance as it burns, weighing about 160gms including
   the coconut shell.
 
-  Price: ₹ 200.00 + Shipping
+
+  Price: ₹ 200.00 + Delivery
 width: '3.6'
 height: '2.4'
 sold: false

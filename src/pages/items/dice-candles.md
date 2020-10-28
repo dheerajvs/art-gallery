@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: 'Dice Candles Price: ₹ 75.00'
+title: Dice Candles ₹ 75.00
 medium: Wax
 description: >-
   Dice shaped aromatic candles is made of wax with Tea Tree fragrance. These 2

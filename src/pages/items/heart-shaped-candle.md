@@ -9,7 +9,7 @@ description: >-
   Price: ₹ 75.00 + Delivery
 width: '2.36'
 height: '0.79'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-heart.jpg
 categories:

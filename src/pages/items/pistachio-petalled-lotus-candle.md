@@ -9,7 +9,7 @@ description: >-
   Price: ₹ 100.00 + Delivery
 width: '3.25'
 height: '0.8'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-pista-flower.jpg
 categories:

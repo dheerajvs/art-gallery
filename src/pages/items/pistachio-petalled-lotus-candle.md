@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Pistachio Petalled Lotus Candle ₹ 100.00
+title: Tea Light Candle in Pistachio Petalled Lotus - Single ₹ 100.00
 medium: Wax and Pistachio shells
 description: >-
   A tea-light candle decorated with real pistachio shells shaped like a lotus.

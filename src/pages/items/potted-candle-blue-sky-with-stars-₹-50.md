@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Potted  Candle - Blue sky with stars - ₹ 50
+title: Potted  Candle - Blue Sky With Stars - ₹ 50
 medium: Wax in painted terracotta pot
 description: >-
   Potted candle depicting a night view of the sky with glittering stars. This

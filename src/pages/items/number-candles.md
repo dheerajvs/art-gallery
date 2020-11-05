@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Number Candles ₹ 50.00
+title: 2021 Number Candle ₹ 50.00
 medium: Wax
 description: >-
   Numbers aromatic candles come in various customizable colors and digits to

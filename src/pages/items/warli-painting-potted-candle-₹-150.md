@@ -1,7 +1,7 @@
 ---
 templateKey: item
-title: Warli Painting - Potted Candle ₹ 150
-medium: Terracotta pot painted with acrylic paints having wax
+title: Potted Candle - Warli Painting ₹ 150
+medium: Wax in painted terracotta pot
 description: >-
   Hand painted Warli art on terracotta pot depicting celebration of Deepawali in
   Indian villages. This potted candle with the pot weighs approximately 180gms.

@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Dahlia Candle ₹ 200.00
+title: Dahlia Flower Candle ₹ 200.00
 medium: Wax
 description: >-
   Dahlia flower shaped aromatic candle is made of paraffin wax with Lavender

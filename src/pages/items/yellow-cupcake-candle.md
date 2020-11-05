@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Custard Cupcake ₹ 225.00
+title: Custard Cupcake Candle ₹ 225.00
 medium: Wax
 description: >-
   This delicious looking Custard Cupcake candle made of wax is sure to delight

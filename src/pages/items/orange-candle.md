@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Orange Candle ₹ 200.00
+title: Sliced Orange Candle ₹ 200.00
 medium: Wax
 description: >-
   Cut Orange aromatic candle is made of wax with the fragrance of real orange.

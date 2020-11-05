@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Tea Light Candle on a CD ₹ 100.00
+title: Tea Light Candle on a CD - Gold Glitters ₹ 100.00
 medium: Wax
 description: >-
   A tea-light candle hand painted and placed on a CD decorated with glitters and

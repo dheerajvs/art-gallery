@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Watermelon ₹ 200.00
+title: Sliced Watermelon Candle ₹ 200.00
 medium: Wax
 description: >-
   This realistic slice of Watermelon Candle is made of wax with Tea Tree

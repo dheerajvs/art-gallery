@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Minion Face ₹ 400
+title: Minion's Face Pot ₹ 400
 medium: Mixed media on plastic pots
 description: >-
   Tiny yellow henchmen minions to brightens up your home. Price: ₹ 400 +

@@ -1,12 +1,12 @@
 ---
 templateKey: item
-title: Olaf
+title: Olaf's Face Pot ₹ 400
 medium: Mixed medium on plastic pot
 description: >-
   Olaf the innocent, friendliest snowman filling the house with love and
-  affection
-width: '4.5'
-height: '4.7'
+  affection. Price: ₹ 400 + Delivery (*Note*: Plant not included)
+width: '4.4'
+height: '4.2'
 sold: false
 available: true
 large_image: /img/olaf.jpg

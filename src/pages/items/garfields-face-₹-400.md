@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Garfield's Face ₹ 400
+title: Garfield's Face Pot ₹ 400
 medium: Mixed media on plastic pots
 description: >-
   This grumpy looking Garfield cat's face is just so adorable and enhances the

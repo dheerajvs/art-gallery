@@ -1,9 +1,11 @@
 ---
 templateKey: item
-title: Winnie the Pooh
+title: Winnie the Pooh's Face Pot
 medium: Mixed media on plastic pot
-description: Cute face of Winnie the Pooh
-width: '4.5'
+description: >-
+  Cute face of Winnie the Pooh brings inn smile on anyone's face. (*Note*: Plant
+  not included)
+width: '4.4'
 height: '4.2'
 sold: true
 available: true

@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: SpongeBob Face ₹ 400
+title: SpongeBob's Face Pot ₹ 400
 medium: Mixed media on plastic pots
 description: >-
   A bright yellow, cute looking SpongeBob's smiling face cheers up anyone

@@ -10,7 +10,7 @@ width: '4.4'
 height: '4.2'
 sold: false
 available: true
-large_image: /img/angrybird-face-pot.jpg
+large_image: /img/spiderman-face-pot.jpg
 categories:
   - category: Pot Paintings
 ---

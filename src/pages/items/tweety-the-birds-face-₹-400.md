@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Tweety the Bird's Face ₹ 400
+title: Tweety the Bird's Face Pot ₹ 400
 medium: Mixed media on plastic pots
 description: >-
   A bright yellow, cute looking yellow canary Tweety Bird's smiling shy face

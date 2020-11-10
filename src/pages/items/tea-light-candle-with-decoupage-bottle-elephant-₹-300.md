@@ -9,7 +9,7 @@ description: >-
   Delivery
 width: '2'
 height: '7'
-sold: false
+sold: true
 available: true
 large_image: /img/decoupage-bottle-elephant.jpg
 categories:

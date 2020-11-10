@@ -7,7 +7,7 @@ description: >-
   approximately 280gms. Price: ₹ 350 + Delivery
 width: '2'
 height: '4'
-sold: false
+sold: true
 available: true
 large_image: /img/bottled-candle.jpg
 categories:

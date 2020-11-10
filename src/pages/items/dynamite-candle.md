@@ -9,7 +9,7 @@ description: >-
   Price: ₹ 225.00 + Delivery
 width: '1.87'
 height: '3.7'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-dynamite.jpg
 categories:

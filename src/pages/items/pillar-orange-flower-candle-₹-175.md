@@ -8,7 +8,7 @@ description: >-
   Delivery
 width: '2'
 height: '3'
-sold: false
+sold: true
 available: true
 large_image: /img/orange-gold-flower-candle.jpg
 categories:

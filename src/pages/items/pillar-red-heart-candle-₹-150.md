@@ -8,7 +8,7 @@ description: >-
   150 + Delivery
 width: '2'
 height: '3'
-sold: false
+sold: true
 available: true
 large_image: /img/red-heart.jpg
 categories:

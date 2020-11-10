@@ -10,7 +10,7 @@ description: >-
   Price: ₹ 125.00 + Delivery
 width: '2.17'
 height: '1.77'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-santa.jpg
 categories:

@@ -8,7 +8,7 @@ description: >-
   discerning art collector.
 width: '8.5'
 height: '4'
-sold: false
+sold: true
 available: true
 large_image: /img/the-treasure-box.jpg
 categories:

@@ -7,7 +7,7 @@ description: >-
   fragrance. This candle weighs about 55gms. Price: ₹ 200.00 + Delivery
 width: '2.6'
 height: '1'
-sold: false
+sold: true
 available: true
 large_image: /img/sunflower-candle.jpg
 categories:

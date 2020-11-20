@@ -7,7 +7,7 @@ description: >-
   Set of 2. Price: ₹ 180.00 + Delivery
 width: '3.25'
 height: '0.8'
-sold: false
+sold: true
 available: true
 large_image: /img/pistacho-tealight-candle-pair.jpg
 categories:

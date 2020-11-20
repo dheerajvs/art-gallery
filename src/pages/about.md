@@ -88,7 +88,10 @@ Checkout [Sowmya's YouTube Channel](https://www.youtube.com/channel/UC1L-9XZlAlV
 
 ## Awards & Workshops
 
-* 1998, Prize winner at Mysore Dussehra Exhibition for “Unity is Fruits of Diversity”
-* 1999, Conducted fabric painting workshop organised by Pidilite for students of vocational course at Sri Jayachamarajendra Polytechnic, Bangalore
-* 2015, Conducted a demonstration of stencil art at Cosmopolitan Club, Bangalore
+* Nov 2020, Conducted Candle Making and Diya Painting workshop at Mariyamma Temple, Shakambari Nagar, Bangalore. Organized by Jayanagar MLA - Sowmya Reddy
+* Nov 2020, Conducted Candle Making and Diya Painting workshop at Sharadha Vidya Nikethan, Kumar Swamy Layout, Bangalore. Organized by Inner Wheel Club of Bengaluru Banashankari
+* Oct 2020, Conducted Candle Making and Diya Painting workshop to empower women at Akkamahadevi Park, Jayanagar, Bangalore. Organized by Jayanagar MLA - Sowmya Reddy
 * 2016, Exhibited her works at Manjari Ladies Association, Bangalore
+* 2015, Conducted a demonstration of stencil art at Cosmopolitan Club, Bangalore
+* 1999, Conducted fabric painting workshop organised by Pidilite for students of vocational course at Sri Jayachamarajendra Polytechnic, Bangalore
+* 1998, Prize winner at Mysore Dussehra Exhibition for “Unity is Fruits of Diversity”

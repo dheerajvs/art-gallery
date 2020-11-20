@@ -9,7 +9,7 @@ description: >-
   Price: ₹ 225.00 + Delivery
 width: '2.5'
 height: '2.5'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-cupcake-yellow.jpg
 categories:

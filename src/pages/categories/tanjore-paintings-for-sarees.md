@@ -1,5 +1,5 @@
 ---
 templateKey: category
-title: Tanjore Paintings for Sarees
+title: Tanjore Paintings on Sarees
 ---
 

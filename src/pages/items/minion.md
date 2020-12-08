@@ -11,6 +11,6 @@ sold: false
 available: true
 large_image: /img/minion.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

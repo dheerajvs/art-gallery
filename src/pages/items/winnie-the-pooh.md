@@ -11,6 +11,6 @@ sold: true
 available: true
 large_image: /img/winnie-the-pooh.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

@@ -9,7 +9,7 @@ description: >-
   Price: ₹ 200.00 + Delivery
 width: '2.75'
 height: '3.5'
-sold: false
+sold: true
 available: true
 large_image: /img/candle-watermelon.jpg
 categories:

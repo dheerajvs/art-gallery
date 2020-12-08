@@ -11,6 +11,6 @@ sold: false
 available: true
 large_image: /img/olaf.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

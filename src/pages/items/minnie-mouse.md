@@ -9,6 +9,6 @@ sold: true
 available: true
 large_image: /img/minnie-mouse.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

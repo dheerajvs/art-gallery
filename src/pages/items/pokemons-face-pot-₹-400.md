@@ -12,6 +12,6 @@ sold: false
 available: true
 large_image: /img/pokemon-face-pot.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

@@ -12,6 +12,6 @@ sold: false
 available: true
 large_image: /img/hellokitty-face-pot.jpg
 categories:
-  - category: Pot Paintings
+  - category: Garden Decor
 ---
 

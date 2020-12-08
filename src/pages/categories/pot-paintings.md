@@ -1,5 +1,5 @@
 ---
 templateKey: category
-title: Pot Paintings
+title: Garden Decor
 ---
 

@@ -8,7 +8,7 @@ description: >-
   approximately 24gms. Price ₹ 100 + Delivery
 width: '4.75'
 height: '0.5'
-sold: false
+sold: true
 available: true
 large_image: /img/cd-tealight-yellow-flower.jpg
 categories:

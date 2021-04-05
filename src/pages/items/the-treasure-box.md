@@ -8,8 +8,8 @@ description: >-
   discerning art collector.
 width: '8.5'
 height: '4'
-sold: true
-available: true
+sold: false
+available: false
 large_image: /img/the-treasure-box.jpg
 categories:
   - category: Brick Paintings

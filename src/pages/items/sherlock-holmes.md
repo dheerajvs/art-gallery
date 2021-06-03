@@ -11,6 +11,6 @@ sold: true
 available: true
 large_image: /img/sherlock-holmes.jpg
 categories:
-  - category: Brick Paintings
+  - category: Brick Art
 ---
 

@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Mr. Penguin Bulb
+title: Mr. Bulb Penguin
 medium: Acrylic paints on bulb
 description: >-
   This cute little penguin is hand-crafted with love using all re-usable items.

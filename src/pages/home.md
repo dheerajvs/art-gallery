@@ -11,5 +11,6 @@ categories:
   - category: Stone Art
   - category: Candles
   - category: Others
+  - category: Bulb Art
 ---
 

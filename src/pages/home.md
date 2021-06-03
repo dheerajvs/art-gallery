@@ -4,13 +4,13 @@ categories:
   - category: Oil Paintings
   - category: Tanjore Paintings
   - category: Tanjore Paintings on Sarees
-  - category: Garden Decor
   - category: Colour Pencil Sketches
+  - category: Garden Decor
+  - category: Candles
   - category: Resin Art
+  - category: Bulb Art
   - category: Brick Paintings
   - category: Stone Art
-  - category: Candles
   - category: Others
-  - category: Bulb Art
 ---
 

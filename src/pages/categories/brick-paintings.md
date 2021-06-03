@@ -1,5 +1,5 @@
 ---
 templateKey: category
-title: Brick Paintings
+title: Brick Art
 ---
 

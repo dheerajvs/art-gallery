@@ -9,6 +9,6 @@ sold: false
 available: true
 large_image: /img/3-storey-building.jpg
 categories:
-  - category: Brick Paintings
+  - category: Brick Art
 ---
 

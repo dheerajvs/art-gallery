@@ -12,6 +12,6 @@ sold: false
 available: false
 large_image: /img/the-treasure-box.jpg
 categories:
-  - category: Brick Paintings
+  - category: Brick Art
 ---
 

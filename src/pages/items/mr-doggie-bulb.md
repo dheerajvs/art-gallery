@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Mr. Doggie Bulb
+title: "Mr. Doggie \U0001F4A1"
 medium: Acrylic paints on bulb
 description: >-
   This cute little dog face is hand-crafted with love using all re-usable items.

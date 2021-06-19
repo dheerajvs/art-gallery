@@ -1,5 +1,5 @@
 ---
 templateKey: category
-title: Decoupage
+title: Decoupage Art
 ---
 

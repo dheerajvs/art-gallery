@@ -7,11 +7,11 @@ categories:
   - category: Colour Pencil Sketches
   - category: Garden Decor
   - category: Candles
+  - category: Decoupage Art
   - category: Stone Art
   - category: Brick Art
   - category: Bulb Art
   - category: Resin Art
   - category: Others
-  - category: Decoupage
 ---
 

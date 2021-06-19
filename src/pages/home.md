@@ -12,5 +12,6 @@ categories:
   - category: Bulb Art
   - category: Resin Art
   - category: Others
+  - category: Decoupage
 ---
 

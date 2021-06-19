@@ -1,18 +1,18 @@
 ---
 templateKey: item
-title: Tea Light Candle with Decoupage Bottle Buddha ₹ 400
-medium: Decoupage Bottle and Tea Light Candle
+title: Decoupage Bottle Buddha ₹ 500
+medium: 'Glass Bottle, Tea Light Candle and Acrylic Paints'
 description: >-
   This beautiful decoupage bottle with meditating Buddha gives a relaxing,
   soothing effect to any environment. This decoupage bottle serves dual purpose
-  as a Tea Light Candle Holder, as well as a vase to hold water plants or
-  flowers. Price: ₹ 400 + Delivery
+  as a Tea Light Candle Holder, as well as a vase to hold aquatic plants or
+  flowers. Price: ₹ 500 + Delivery
 width: '2'
 height: '7'
 sold: true
 available: true
 large_image: /img/decoupage-bottle-buddha.jpg
 categories:
-  - category: Candles
+  - category: Decoupage Art
 ---
 

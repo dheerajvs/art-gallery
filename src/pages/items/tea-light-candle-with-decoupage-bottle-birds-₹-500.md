@@ -1,7 +1,7 @@
 ---
 templateKey: item
 title: Decoupage Bottle with 2 Sun Birds ₹ 500
-medium: Decoupage Bottle and Tea Light Candle
+medium: 'Glass Bottle, Tea Light Candle and Acrylic Paints'
 description: >-
   This beautiful decoupage bottle with sun birds adds elegant look to any
   environment. This decoupage bottle serves dual purpose as a Tea Light Candle

@@ -84,7 +84,7 @@ She began her professional career in the IT industry, worked at a number of star
 
 Sowmya's repertoire now extends from traditional oil paintings and tanjore paintings to kalamkari, murals,  zentangles, pot paintings, brick paintings, coffee paintings and many more painting forms. So far she has trained several hundred students.
 
-Checkout [Sowmya's YouTube Channel](https://www.youtube.com/channel/UC1L-9XZlAlV4x-Y7d9r_wNg) 
+Checkout [Sowmya's YouTube Channel](https://www.youtube.com/c/SowmyaBA)
 
 ## Awards & Workshops
 

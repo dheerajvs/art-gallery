@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Leopard Spots
+title: Leopard Spots Vase
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted leopard spots on terracotta pot looks beautiful

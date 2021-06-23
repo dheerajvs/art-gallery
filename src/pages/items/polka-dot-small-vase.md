@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Polka dot small vase
+title: Polka dot small
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Polka dots" on terracotta pot looks beautiful

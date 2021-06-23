@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Tribal face vase
+title: Tribal face1
 medium: Mixed media on terracotta pots
 description: >-
   This beautifully handcrafted "Tribal face" on terracotta pot looks just so

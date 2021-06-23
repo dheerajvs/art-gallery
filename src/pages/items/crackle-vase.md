@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Crackle
+title: Crackled
 medium: Enamel paints on terracotta pots
 description: >-
   This beautifully hand painted "Crackle effect" on terracotta pot looks

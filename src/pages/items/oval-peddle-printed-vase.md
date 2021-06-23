@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Oval peddle printed vase
+title: Oval black pebbles
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Black ovoid pebbles" on terracotta pot looks

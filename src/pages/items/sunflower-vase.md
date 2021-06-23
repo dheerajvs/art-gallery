@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Sunflower vase
+title: Sunflower
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Sunflower" on terracotta pot looks beautiful

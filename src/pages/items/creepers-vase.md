@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Creepers vase
+title: Creepers
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Creepers" on terracotta pot looks beautiful

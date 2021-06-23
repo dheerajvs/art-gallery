@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Abstract floral vase
+title: Abstract floral
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Abstract floral" on terracotta pot looks

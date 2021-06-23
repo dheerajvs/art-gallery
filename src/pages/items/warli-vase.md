@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Warli vase
+title: Warli painting
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Warli painting" on terracotta pot looks

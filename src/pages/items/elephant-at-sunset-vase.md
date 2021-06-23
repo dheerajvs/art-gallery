@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Elephant at sunset vase
+title: Elephant at sunset
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Elephants at sunset" on terracotta pot looks

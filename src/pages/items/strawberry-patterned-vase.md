@@ -1,9 +1,9 @@
 ---
 templateKey: item
-title: 'Strawberry patterned vase '
+title: 'Strawberry pattern '
 medium: Acrylic paints on terracotta pots
 description: >-
-  This beautifully hand painted "Strawberry patterns" on terracotta pot looks
+  This beautifully hand painted "Strawberry pattern" on terracotta pot looks
   beautiful when placed in any part of the house either indoor or outdoor. It
   gives a modern perspective to the decor. You can choose to keep it stand alone
   or use as a flower vase.

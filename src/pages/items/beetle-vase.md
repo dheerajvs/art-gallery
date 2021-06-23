@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Beetle vase
+title: Beetle
 medium: Mixed media on terracotta pots
 description: >-
   This beautifully hand crafted "Beetle" on terracotta pot looks beautiful when

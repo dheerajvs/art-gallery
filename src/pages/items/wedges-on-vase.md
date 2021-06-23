@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Wedges on vase
+title: Wedges
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Wedges" on terracotta pot looks beautiful when

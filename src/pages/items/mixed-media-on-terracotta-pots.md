@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Mixed media on terracotta pots
+title: Tribal face2
 medium: Mixed media on terracotta pots
 description: >-
   This beautifully handcrafted "Tribal face" on terracotta pot looks just so

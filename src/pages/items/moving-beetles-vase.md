@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Moving beetles vase
+title: Moving beetles
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Beetles" on terracotta pot looks beautiful when

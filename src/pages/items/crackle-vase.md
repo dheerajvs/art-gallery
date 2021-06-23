@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Crackle vase
+title: Crackle
 medium: Enamel paints on terracotta pots
 description: >-
   This beautifully hand painted "Crackle effect" on terracotta pot looks

@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Kathakali face vase
+title: Kathakali face
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Kathakali face" on terracotta pot looks so

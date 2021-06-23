@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Giraffes at sunset vase
+title: Giraffes at sunset
 medium: Acrylic paints on terracotta pots
 description: >-
   This beautifully hand painted "Giraffes at sunset" on terracotta pot looks

@@ -4,7 +4,7 @@ title: 'Blue Pottery Jug '
 medium: Acrylic Paint on Terracotta Jug
 description: >-
   Blue Pottery Jug a traditional craft of Jaipur (Turko-Persian in origin) is
-  just so beautiful to be placed in the kitchen or dinning or on bed side table.
+  just so beautiful to be placed in the kitchen, dinning or on bed side tables.
 width: '7'
 height: '9'
 sold: false

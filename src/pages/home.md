@@ -6,7 +6,7 @@ categories:
   - category: Tanjore Paintings on Sarees
   - category: Colour Pencil Sketches
   - category: Garden Decor
-  - category: Terracotta Pot Paintings
+  - category: Terracotta Pot and Sculpture Paintings
   - category: Candles
   - category: Decoupage Art
   - category: Stone Art

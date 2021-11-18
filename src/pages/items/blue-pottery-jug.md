@@ -11,6 +11,6 @@ sold: false
 available: true
 large_image: /img/blue-pottery-painting.jpg
 categories:
-  - category: Terracotta Pot Paintings
+  - category: Terracotta Pot and Sculpture Paintings
 ---
 

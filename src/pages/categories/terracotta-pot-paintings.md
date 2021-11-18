@@ -1,5 +1,5 @@
 ---
 templateKey: category
-title: Terracotta Pot Paintings
+title: Terracotta Pot and Sculpture Paintings
 ---
 

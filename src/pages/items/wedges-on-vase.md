@@ -12,6 +12,6 @@ sold: true
 available: true
 large_image: /img/pot-17-l.jpg
 categories:
-  - category: Terracotta Pot Paintings
+  - category: Terracotta Pot and Sculpture Paintings
 ---
 

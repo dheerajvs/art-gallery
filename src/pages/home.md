@@ -7,6 +7,7 @@ categories:
   - category: Colour Pencil Sketches
   - category: Garden Decor
   - category: Terracotta Pot and Sculpture Paintings
+  - category: Bottle Guard Art
   - category: Candles
   - category: Decoupage Art
   - category: Stone Art

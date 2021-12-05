@@ -13,6 +13,7 @@ categories:
   - category: Stone Art
   - category: Brick Art
   - category: Bulb Art
+  - category: Recycled Art
   - category: Resin Art
   - category: Others
 ---

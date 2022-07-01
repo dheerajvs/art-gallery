@@ -8,7 +8,7 @@ description: >-
   included)
 width: '4.4'
 height: '4.2'
-sold: false
+sold: true
 available: true
 large_image: /img/hellokitty-face-pot.jpg
 categories:

@@ -7,7 +7,7 @@ description: >-
   house. Especially as part of indoor or outdoor garden.
 width: '10'
 height: '15'
-sold: false
+sold: true
 available: true
 large_image: /img/terracotta-buddha-sculpture.jpg
 categories:

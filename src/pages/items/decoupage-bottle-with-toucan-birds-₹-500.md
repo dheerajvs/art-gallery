@@ -9,7 +9,7 @@ description: >-
   Delivery
 width: '2.0'
 height: '6,5'
-sold: false
+sold: true
 available: true
 large_image: /img/toucan-bottle.jpg
 categories:

@@ -8,7 +8,7 @@ description: >-
   brush stand. Looks so good, especially in kids room study table.
 width: '2'
 height: '5.5'
-sold: true
+sold: false
 available: true
 large_image: /img/panda-can-with-coke-can.jpg
 categories:

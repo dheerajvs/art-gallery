@@ -7,7 +7,7 @@ description: >-
   around. Price: ₹ 400 + Delivery (*Note*: Plant not included)
 width: '4.4'
 height: '4.2'
-sold: false
+sold: true
 available: true
 large_image: /img/spongebob-face-pot.jpg
 categories:

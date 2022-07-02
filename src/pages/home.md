@@ -4,7 +4,9 @@ categories:
   - category: Oil Paintings
   - category: Tanjore Paintings
   - category: Tanjore Paintings on Sarees
+  - category: Kalamkari
   - category: Colour Pencil Sketches
+  - category: Zentangles
   - category: Garden Decor
   - category: Terracotta Pot and Sculpture Paintings
   - category: Bottle Guard Art
@@ -15,6 +17,6 @@ categories:
   - category: Bulb Art
   - category: Recycled Art
   - category: Resin Art
+  - category: Painted Silver Idols
   - category: Others
 ---
-

@@ -2,6 +2,7 @@
 templateKey: home
 categories:
   - category: Oil Paintings
+  - category: Miniature Paintings
   - category: Tanjore Paintings
   - category: Tanjore Paintings on Sarees
   - category: Kalamkari
@@ -20,3 +21,4 @@ categories:
   - category: Painted Silver Idols
   - category: Others
 ---
+

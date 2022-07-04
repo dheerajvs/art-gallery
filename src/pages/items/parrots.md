@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Parrots
+title: Parrots Blouse 1
 medium: Fabric Paints and 3D embosser
 description: >-
   These beautiful tanjore painting of parrots looks elegant on any silk saree
@@ -10,7 +10,7 @@ width: '5'
 height: '5'
 sold: true
 available: true
-large_image: /img/tanjore-parrots-on-saree.jpg
+large_image: /img/blouse-1.jpg
 categories:
   - category: Tanjore Paintings on Sarees
 ---

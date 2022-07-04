@@ -12,6 +12,6 @@ sold: true
 available: true
 large_image: /img/shiva-linga.jpg
 categories:
-  - category: Zentangles
+  - category: Stone Art
 ---
 

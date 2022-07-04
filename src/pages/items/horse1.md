@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Horse1
+title: Horse 1
 medium: Pen on Paper
 description: >-
   Colored horse with intricate patterns looks so elegant any where in the

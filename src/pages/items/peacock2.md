@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Peacock2
+title: Peacock 2
 medium: Pen on Paper
 description: >-
   Peacock with intricate patterns looks so elegant any where in the veranda,

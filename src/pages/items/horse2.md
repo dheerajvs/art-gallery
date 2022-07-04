@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Horse2
+title: Horse 2
 medium: Pen on Paper
 description: >-
   Monochrome horse with intricate patterns looks so elegant any where in the

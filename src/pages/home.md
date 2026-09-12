@@ -4,7 +4,7 @@ categories:
   - category: Oil Paintings
   - category: Miniature Paintings
   - category: Tanjore Paintings
-  - category: Tanjore Paintings on Sarees
+  - category: "Paintings on Sarees Blouse and Dresses "
   - category: Kalamkari
   - category: Colour Pencil Sketches
   - category: Zentangles
@@ -21,4 +21,3 @@ categories:
   - category: Painted Silver Idols
   - category: Others
 ---
-

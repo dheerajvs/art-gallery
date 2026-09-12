@@ -9,7 +9,7 @@ width: "8"
 height: "8"
 sold: true
 available: true
-large_image: /img/blouse-and-saree-border.jpg
+large_image: /img/blouse-1.jpg
 categories:
   - category: "Paintings on Sarees Blouse and Dresses "
 ---

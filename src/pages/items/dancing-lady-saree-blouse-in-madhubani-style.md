@@ -11,6 +11,6 @@ sold: true
 available: true
 large_image: /img/blouse-small.jpg
 categories:
-  - category: Tanjore Paintings on Sarees
+  - category: "Paintings on Sarees Blouse and Dresses "
 ---
 

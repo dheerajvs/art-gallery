@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: "Saree Blouse 2: Madhubani Style Painting"
+title: "Saree Blouse 1: Madhubani Style Painting"
 medium: Acrylic paints on raw silk blouse
 description: "Hand painted saree blouse in Madhubani painting style is just
   elegant for any occasion. This blouse can be draped with any printed or plain

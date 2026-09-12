@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: "Saree Painting 3: Tanjore Painting Style"
+title: "Saree Blouse 3: Tanjore Painting Style"
 medium: Acrylic paints on soft silk and 3-D emboser
 description: A graceful Tanjore painting inspired blouse featuring twin
   elephants framed by ornate floral vines, lotus motifs and rich golden

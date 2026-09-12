@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: "Saree Blouse: Tanjore Painting Style"
+title: "Saree Blouse 4: Tanjore Painting Style"
 medium: Acrylic paints on soft silk and 3-D emboser
 description: Hand painted Tanjore painting inspired blouse gracefully featuring
   twin peacocks, intricate floral motifs and rich golden detailing. A timeless

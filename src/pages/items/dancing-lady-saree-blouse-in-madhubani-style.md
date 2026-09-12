@@ -1,6 +1,6 @@
 ---
 templateKey: item
-title: Dancing lady Blouse 2
+title: "Saree Blouse: Madhubani style painting"
 medium: Acrylic paints on raw silk blouse
 description: "Hand painted saree blouse in Madhubani painting style is just
   elegant for any occasion. This blouse can be draped with any printed or plain

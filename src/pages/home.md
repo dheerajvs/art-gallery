@@ -2,11 +2,11 @@
 templateKey: home
 categories:
   - category: Oil Paintings
-  - category: Miniature Paintings
   - category: Tanjore Paintings
   - category: "Paintings on Sarees Blouse and Dresses "
-  - category: Kalamkari
   - category: Colour Pencil Sketches
+  - category: Kalamkari
+  - category: Miniature Paintings
   - category: Zentangles
   - category: Garden Decor
   - category: Terracotta Pot and Sculpture Paintings
